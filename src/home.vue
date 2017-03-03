@@ -18,7 +18,7 @@
           <p class="people_count"><span class="count_txt">目前已有</span><span class="number">{{ number }}</span><span class="count_txt">人參加遊戲！</span></p>
           <img src="./assets/images/txt.png" alt="" class="home_txt">
           <img src="./assets/images/txt2.png" alt="" class="home_txt_mobile">
-          <a href="stdsadep2.html" class="btn1"><img src="./assets/images/btn1.gif" alt=""></a>
+          <a class="btn1" @click="next"><img src="./assets/images/btn1.gif" alt=""></a>
         </div>
         
       </div>
@@ -32,9 +32,15 @@ export default {
   name: 'home_page',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
       status: null,
-      number: 300
+      number: 0
+    }
+  },
+  methods: {
+    next: function () {
+      var self = this;
+      console.log(self.$parent.step);
+      self.$parent.step += 1
     }
   }
 }
