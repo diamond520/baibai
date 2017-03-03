@@ -1,0 +1,1036 @@
+/*ALL*/
+*{padding: 0; margin: 0; box-sizing:border-box; -webkit-box-sizing:border-box; -webkit-text-size-adjust:none; }
+html,body{ height:100%;}
+body{background: url("../images/bg.jpg") no-repeat top center fixed; background-size: cover; overflow:hidden; text-align: justify; text-justify:inter-ideograph; list-style:none; text-decoration:none; font-family:"Times New Roman",  Helvetica, "PMingLiU", "Heiti TC", "微軟正黑體"; }
+.clear{ clear: both}
+
+/*INDEX*/
+#KV{z-index:1;width:100vw; position: fixed; background:url("../images/emperor.png") no-repeat top left fixed; background-size: contain ; height: 100vh}
+.cloud{z-index:2; position: absolute; right: 720px; top: 120px; width: 80px;animation: cloud 1s linear  infinite alternate; -webkit-animation: cloud 1s linear  infinite alternate;}
+.cloudman{ position: absolute; right: -240px; bottom: 70px; animation: cloudman 3s linear  infinite alternate; -webkit-animation: cloudman 3s linear  infinite alternate;}
+.cloudtree{ position: absolute; right: 30px; top: -10px; animation: cloudtree 2s linear  infinite alternate; -webkit-animation: cloudtree 2s linear  infinite alternate;}
+.balloon1{z-index:1;position: absolute; right:750px; top: 30px;}
+.balloon2{z-index:3;position: absolute; right:-20px; top: 250px;}
+.pigeon1{position: absolute; top:170px; right: 180px; z-index: 2;animation: pigeon1 1.5s linear  infinite alternate; -webkit-animation: pigeon1 1.5s linear  infinite alternate;}
+.pigeon2{z-index:1;position: absolute; top:60px; right: 670px; z-index: 2;animation: pigeon2 0.5s linear  infinite alternate; -webkit-animation: pigeon2 0.5s linear  infinite alternate;}
+.pigeon3{position: absolute; top:80px; right: 20px; z-index: 2;animation: pigeon3 1.5s linear  infinite alternate; -webkit-animation: pigeon3 1.5s linear  infinite alternate;}
+
+@keyframes cloud { from { right: 720px;}  to { right: 730px;} }
+@-webkit-keyframes cloud { from { right: 720px;}  to { right: 730px;} }
+
+@keyframes cloudman { from { right: -240px;}  to { right: -230px;} }
+@-webkit-keyframes cloudman { from { right: -240px;}  to { right: -230px;} }
+
+@keyframes cloudtree { from { right: 30px;}  to { right: 40px;} }
+@-webkit-keyframes cloudtree { from { right: 30px;}  to { right: 40px;} }
+
+@keyframes pigeon1 { from { top:170px; right: 180px;}  to { top:180px; right: 190px;} }
+@-webkit-keyframes pigeon1{ from { top:170px; right: 180px;}  to { top:180px; right: 190px;} }
+
+@keyframes pigeon2 { from {  top:60px; right: 670px;}  to {  top:75px; right: 650px;} }
+@-webkit-keyframes pigeon2{ from { top:60px; right: 670px;}  to {  top:75px; right: 650px;} }
+
+@keyframes pigeon3 { from {   top:80px; right: 20px;}  to {  top:60px; right: 10px;} }
+@-webkit-keyframes pigeon3{ from {  top:80px; right: 20px;}  to {   top:60px; right: 10px;} }
+
+.emperor3,#home_page .tree,#home_page .cloud2,.chosen_gift2{ display: none;}
+.main_container{height: 100vh; width: 56vw; float: right; position: relative; z-index: 2}
+.content{ position: absolute; top: 180px; width: 56vw; height: 570px; }
+#home .content{ background:url("../images/txt_bg.png") repeat-x top right ; background-size: initial ; }
+.home_txt_area{ width: 570px;}
+.home_txt_mobile{ display: none;}
+.people_count{ position: absolute; width: 350px; margin-left:120px; margin-top:-40px; font-weight: bold; letter-spacing: 0.02em; font-size: 25px; line-height: 30px; color: #cba11f}
+.number{ font-size: 30px; text-decoration: underline; font-weight: bolder; padding: 0 5px; }
+.btn1{box-shadow:0 0 13px #a1885c;  width: 330px; display: block; margin:0 auto; cursor: pointer; z-index: 9; position: relative;}
+.btn1 img,.btn2 img,.btn3 img{ display: block; width: 100%}
+#step_page .pigeon2{z-index:4;position: absolute; top:60px; right: 530px; z-index: 2;animation: pigeon2_2 1s linear  infinite alternate; -webkit-animation: pigeon2_2 1s linear  infinite alternate;}
+@keyframes pigeon2_2 { from {  top:60px; right: 530px;}  to {  top:75px; right: 520px;} }
+@-webkit-keyframes pigeon2_2{ from { top:60px; right:530px;}  to {  top:75px; right:520px;} }
+#step_page .cloudman{ position: absolute; right: -200px; bottom: 70px; animation: cloudman2 3s linear  infinite alternate; -webkit-animation: cloudman2 3s linear  infinite alternate;}
+@keyframes cloudman2 { from { right: -200px;}  to { right: -170px;} }
+@-webkit-keyframes cloudman2 { from { right: -200px;}  to { right: -170px;} }
+#step2{ background: none; z-index: 1}
+#step_page .cloudtree2{ display: none;}
+.txt_area{ width: 353px; margin-left: 115px;}
+.case_logo{display: block;}
+.case_Q{display: block; }
+.family_name{ background: none; border: 3.5px solid #C79A16; width: 100px; height:80px; text-align: center; font-size: 30px; display: block; margin: 20px auto 40px}
+.gift{ margin-bottom: 20px;}
+.man{ width: 100px; height: 150px; display: block; margin: 0 auto; background: url("../images/man.png") center center no-repeat; background-size: cover;animation:who 1s linear  infinite alternate; -webkit-animation: who 1s linear  infinite alternate; font-size: 30px; color: #746432; font-weight: bolder;  line-height: 150px; text-align: center;}
+.result{ text-align: center; font-weight: bolder; font-size: 15.5px; color: #352a23; margin: 20px 0 30px; padding-bottom: 20px; line-height: 1.5em; border-bottom: 1px solid #c9b791}
+.who{ font-size: 22px; color: #746432; font-weight: bolder; line-height: 30px; display: block; margin: 0 auto; text-align: center; }
+@keyframes who { from { font-size: 30px;} to { font-size: 36px;} }
+@-webkit-keyframes who { from {font-size: 30px;} to { font-size: 36px;} }
+
+
+.btn3_txt{ width: 230px; display: block; margin: 0 auto 20px;}
+.chosen_gift{ width: 300px; display: block; position: absolute; left: 110px; bottom: 160px;animation:chosen_gift 3s linear  infinite alternate; -webkit-animation: chosen_gift 3s linear  infinite alternate;}
+@keyframes chosen_gift { from { left: 90px; bottom: 170px;} to { left: 130px; bottom: 170px;} }
+@-webkit-keyframes chosen_gift { from { left: 90px; bottom: 170px;} to { left: 130px; bottom: 170px;} }
+#step_page2{ overflow-x: hidden; overflow-y: scroll }
+.tree{ position: absolute; left: -150px; top: -50px;}
+.case_logo_2{ width:353px; margin: 0 auto 20px; position: relative; top: 50px; display: block;}
+.form{ position: relative; z-index: 1000; width: 660px; margin: 60px auto 0}
+.form .case_Q{ width: 353px; margin: 0 auto 20px;  display: block;}
+.form ul{ width: 100%; margin-bottom: 20px; float: left;}
+.form ul li{ width: 100%; margin:10px 0px; height: 46px; float: left; list-style: none;}
+.form ul li img{ width: 260px; display:block; float: left;}
+.form ul li input{ border: 0; line-height: 36px; width: 300px; font-size: 20px; padding:5px 10px;}
+.memo{ position: relative; z-index: 5; width: 1000px; margin: 0 auto 30px;}
+.memo ol{ font-size: 13px; font-family: "微軟正黑體"}
+.memo ol li{ margin-bottom: 5px; list-style: decimal outside; margin-left: 20px; line-height: 1.4em}
+.btn3{box-shadow:0 0 13px #a1885c;  width: 250px; display: block; margin:10px auto 40px; cursor: pointer; z-index: 9; position: relative;}
+.btn3 img{ width: 100%}
+#step_page2 .cloudman{ width: 340px;right: -120px; bottom:180px; animation: cloudman3 3s linear  infinite alternate; -webkit-animation: cloudman3 3s linear  infinite alternate;}
+@keyframes cloudman3 { from { right: -100px;}  to { right: -120px;} }
+@-webkit-keyframes cloudman3 { from { right: -100px;}  to { right: -120px;} }
+#step_page2 .balloon2{width: 200px; right:190px; top: 180px;}
+#step_page2 .balloon1{right:850px; top: 80px;}
+#step_page2 .pigeon1{ width: 100px;animation: pigeon4_1 1s linear  infinite alternate; -webkit-animation: pigeon4_1 1s linear  infinite alternate;}
+@keyframes pigeon4_1 { from { top:100px; right: 250px;}  to { top:110px; right: 260px;} }
+@-webkit-keyframes pigeon4_1{ from { top:100px; right:250px;}  to { top:110px; right: 260px;} }
+#step_page2 .pigeon3{ width: 80px;}
+#step_page2 .pigeon2{z-index:4;position: absolute; top:190px; right: 970px; z-index: 2;animation: pigeon4_2 1s linear  infinite alternate; -webkit-animation: pigeon4_2 1s linear  infinite alternate;}
+@keyframes pigeon4_2 { from {  top:190px; right: 970px;}  to {  top:165px; right: 990px;} }
+@-webkit-keyframes pigeon4_2{ from { top:190px; right:970px;}  to {  top:165px; right:990px;} }
+#step_page2 .cloud{display: none;}
+.end_page .cloud2{ width: 200px;position: absolute; top: 240px; left: -90px; z-index: 1;animation: cloud5_2 3s linear  infinite alternate; -webkit-animation: cloud5_2 3s linear  infinite alternate;}
+@keyframes cloud5_2 { from {left: -90px; }  to { left: -80px; } }
+@-webkit-keyframes cloud5_2 { from { left: -90px; }  to { left: -80px; } }
+.end_page .cloud3{ width: 300px;position: absolute; top: 460px; left: -50px; z-index: 10;animation: cloud5_3 3s linear  infinite alternate; -webkit-animation: cloud5_3 3s linear  infinite alternate;}
+@keyframes cloud5_3 { from {left: -70px; }  to { left: -50px; } }
+@-webkit-keyframes cloud5_3 { from { left: -70px; }  to { left: -50px; } }
+.end_page .cloud4{ width: 300px;position: absolute; top: 240px; right: -90px; z-index: 1;animation: cloud5_4 3s linear  infinite alternate; -webkit-animation: cloud5_4 3s linear  infinite alternate;}
+@keyframes cloud5_4 { from { right: -90px; }  to { right: -80px; } }
+@-webkit-keyframes cloud5_4 { from {  right: -90px; }  to {  right:-80px; } }
+.line{ background: url("../images/line.gif") no-repeat top center; background-size: cover; height: 150px; width: 150px; display: block; margin: 0 auto 50px; position: relative; top: 40px;}
+.shareBtn{ display: block; position: absolute; top: 0; left: 0; width: 150px; height: 150px;}
+#step_page2 .cloudman2{ position:absolute; width: 400px;right: -120px; top:400px; animation: cloudman5_2 3s linear  infinite alternate; -webkit-animation: cloudman5_2 3s linear  infinite alternate;}
+@keyframes cloudman5_2 { from { right: -100px;}  to { right: -120px;} }
+@-webkit-keyframes cloudman5_2 { from { right: -100px;}  to { right: -120px;} }
+#step_page2 .emperor2{ width:360px; display: block; position: absolute; bottom: 0; left: 50px; z-index: 9}
+.end_info{ z-index: 999; width:500px; position: relative; display: block; margin: 0 auto }
+
+
+@media screen and (min-width:1681px){
+#home,#home .content{ width: 55vw;  top: 10%; }
+.content{ top: 40px; background-position: top right; height: initial}
+.content .home_txt{ display: block; }
+.btn1{  width: 300px; }
+.balloon1{    width: 160px;  left: 550px;   top: 40px;}
+.balloon2{position: fixed; width: 321px;   right: 70px; top: 330px;}
+.cloud{top:30px; width:100px;}
+@keyframes cloud { from { left:710px;}  to { left:  690px;} }
+@-webkit-keyframes cloud { from { left: 710px;}  to { left: 690px;} }
+.cloudtree{width: 283px; top: 20px}
+.pigeon1{ position: fixed;width: 80px; z-index: 3}
+.pigeon2{ position: fixed;width: 120px}
+@keyframes pigeon2 { from {  top:90px; right: 840px;}  to {  top:105px; right: 820px;} }
+@-webkit-keyframes pigeon2{ from { top:90px; right:840px;}  to {  top:105px; right:820px;} }
+.pigeon3{ position: fixed;width: 50px}
+.cloudman{ position: fixed; width: 450px;right: -150px;bottom:60px; animation: cloudman 3s linear  infinite alternate; -webkit-animation: cloudman 3s linear  infinite alternate;}
+@keyframes cloudman { from { right: -150px;}  to { right: -170px;} }
+@-webkit-keyframes cloudman { from { right: -150px;}  to { right: -170px;} }
+.txt_area{ width: 300px; margin-left: 20px; padding-top: 10px;}
+.case_logo{display: block; width: 353px; position: relative; margin: 0 auto; }
+.case_Q{display: block; width: 100% }
+.family_name{ background: none; border: 3.5px solid #C79A16; width: 140px; height:120px; text-align: center; font-size: 30px; display: block; margin: 10px auto 30px}
+.gift{ margin-bottom: 0px;}
+#step_page .cloud3{ display: none;}
+#step_page .pigeon2{z-index:4;position: absolute; width: 90px; top:60px; right:670px;animation: pigeon2_2 1.5s linear  infinite alternate; -webkit-animation: pigeon2_2 1.5s linear  infinite alternate;}
+@keyframes pigeon2_2 { from {  top:60px; right: 780px;}  to {  top:75px; right: 760px;} }
+@-webkit-keyframes pigeon2_2{ from { top:60px; right:780px;}  to {  top:75px; right:760px;} }
+#step_page .balloon2{ position: fixed; width: 250px; right:-10px; top: 260px;}
+#step_page .cloudman{ position: fixed; right: -120px; bottom: 90px; animation: cloudman2 3s linear  infinite alternate; -webkit-animation: cloudman2 3s linear  infinite alternate;}
+@keyframes cloudman2 { from { right: -120px;}  to { right: -140px;} }
+@-webkit-keyframes cloudman2 { from { right: -120px;}  to { right: -140px;} }
+#step2{ background: none; z-index: 1}
+#step_page .cloudtree2{ display: none;}
+#step_page2 .cloudtree2{ display: none;}
+.txt_area{ width: 400px; margin-left: 105px;}
+.case_logo{display: block;}
+.case_Q{display: block; }
+.gift{ margin-bottom: 20px;}
+.man{ width: 140px; height: 200px; display: block; margin: 0 auto; background: url("../images/man.png") center center no-repeat; background-size: cover; font-size: 36px; color: #746432; font-weight: bolder;  line-height: 190px; text-align: center;}
+@keyframes who { from {font-size: 36px;} to { font-size: 42px;} }
+@-webkit-keyframes who { from {font-size: 36px;} to { font-size: 42px;} }
+.result{ text-align: center; font-weight: bolder; font-size: 20px; color: #352a23; margin: 20px 0; padding-bottom: 30px; line-height: 1.5em; border-bottom: 1px solid #c9b791}
+.who{ font-size: 30px; color: #746432; font-weight: bolder; line-height:40px; display: block; margin: 0 auto; text-align: center; }
+.btn3_txt{ width: 300px; display: block; margin: 0 auto 20px;}
+.chosen_gift{ width: 300px; display: block; position: absolute; left: 160px; bottom: 210px;animation:chosen_gift 3s linear  infinite alternate; -webkit-animation: chosen_gift 3s linear  infinite alternate;}
+@keyframes chosen_gift { from { left: 12vw; } to { left:19vw; } }
+@-webkit-keyframes chosen_gift { from {left: 12vw; } to { left:19vw; } }
+#step_page2{ overflow-x: hidden; overflow-y: visible }
+.tree{ position: absolute; left: -150px; top: -20px;}
+.case_logo_2{ width:353px; margin: 0 auto 20px; position: relative; top: 50px; display: block;}
+.form{ width: 660px; margin: 60px auto 0}
+.form .case_Q{ width: 353px; margin: 0 auto 20px;  display: block;}
+.form ul{ width: 100%; margin-bottom: 20px; float: left;}
+.form ul li{ width: 100%; margin:10px 0px; height: 46px; float: left; list-style: none;}
+.form ul li img{ width: 260px; display:block; float: left;}
+.form ul li input{ border: 0; line-height: 36px; width: 300px; font-size: 20px; padding:5px 10px;}
+.memo{ position: relative; z-index: 5; width: 1000px; margin: 0 auto 30px;}
+.memo ol{ font-size: 13px; font-family: "微軟正黑體"}
+.memo ol li{ margin-bottom: 5px; list-style: decimal outside; margin-left: 20px; line-height: 1.4em}
+.btn3{  width: 300px; display: block; margin:10px auto 40px; cursor: pointer; z-index: 9; position: relative;}
+.btn3 img{ width: 100%}
+.slick-prev{ left: 65px !important}
+.slick-next{ right: 65px !important}
+#step_page2 .cloudtree,#step_page2 .tree{ position: fixed;}
+#step_page2 .cloudman{  width: 340px;right: -120px; bottom:180px; animation: cloudman3 3s linear  infinite alternate; -webkit-animation: cloudman3 3s linear  infinite alternate;}
+@keyframes cloudman3 { from { right: -100px;}  to { right: -120px;} }
+@-webkit-keyframes cloudman3 { from { right: -100px;}  to { right: -120px;} }
+#step_page2 .balloon2{position:absolute; width: 200px; right:190px; top: 180px;}
+#step_page2 .balloon1{left: 540px;  top: 20px;  width: 120px;}
+#step_page2 .pigeon1{position:absolute;  width: 100px;animation: pigeon4_1 1s linear  infinite alternate; -webkit-animation: pigeon4_1 1s linear  infinite alternate;}
+@keyframes pigeon4_1 { from { top:100px; right: 250px;}  to { top:110px; right: 260px;} }
+@-webkit-keyframes pigeon4_1{ from { top:100px; right:250px;}  to { top:110px; right: 260px;} }
+#step_page2 .pigeon3{ position: fixed;  width: 80px;}
+#step_page2 .pigeon2{z-index:4;position: fixed;top:190px; right: 1270px; z-index: 2;animation: pigeon4_2 1s linear  infinite alternate; -webkit-animation: pigeon4_2 1s linear  infinite alternate;}
+@keyframes pigeon4_2 { from {  top:190px; right: 1270px;}  to {  top:165px; right: 1290px;} }
+@-webkit-keyframes pigeon4_2{ from { top:190px; right:1270px;}  to {  top:165px; right:1290px;} }
+#step_page2 .cloud{display: none;}
+.end_page .cloud2{ width: 200px;position: fixed; top: 240px; left: -90px; z-index: 1;animation: cloud5_2 3s linear  infinite alternate; -webkit-animation: cloud5_2 3s linear  infinite alternate;}
+@keyframes cloud5_2 { from {left: -90px; }  to { left: -80px; } }
+@-webkit-keyframes cloud5_2 { from { left: -90px; }  to { left: -80px; } }
+.end_page .cloud3{position:fixed;  width: 300px;position: absolute; top: 460px; left: -50px; z-index: 10;animation: cloud5_3 3s linear  infinite alternate; -webkit-animation: cloud5_3 3s linear  infinite alternate;}
+@keyframes cloud5_3 { from {left: -70px; }  to { left: -50px; } }
+@-webkit-keyframes cloud5_3 { from { left: -70px; }  to { left: -50px; } }
+.end_page .cloud4{ position:fixed; width: 300px; top: 240px; right: -110px; z-index: 1;animation: cloud5_4 3s linear  infinite alternate; -webkit-animation: cloud5_4 3s linear  infinite alternate;}
+@keyframes cloud5_4 { from { right: -110px; }  to { right: -120px; } }
+@-webkit-keyframes cloud5_4 { from {  right: -110px; }  to {  right:-120px; } }
+.line{ width: 150px; display: block; margin: 0 auto 50px; position: relative; top: 40px;}
+#step_page2 .cloudman2{ position:fixed; width:500px;right: -120px; top:initial; bottom: 30px; animation: cloudman5_2 3s linear  infinite alternate; -webkit-animation: cloudman5_2 3s linear  infinite alternate;}
+@keyframes cloudman5_2 { from { right: -100px;}  to { right: -120px;} }
+@-webkit-keyframes cloudman5_2 { from { right: -100px;}  to { right: -120px;} }
+#step_page2 .emperor2{ width:400px; display: block; position: fixed; bottom: 0; left: 50px; z-index: 9}
+.end_info{ width:527px; position: relative; display: block; margin: 0 auto }
+}
+
+
+
+@media screen and (min-width:1441px) and (max-width:1680px){
+body{overflow-y:visible;}
+#home,#home .content{ width: 55vw;  top: 10%; }
+.content{ top: 40px; background-position: top right; height: initial}
+.content .home_txt{ display: block; }
+.btn1{  width: 300px; margin-bottom: 20px; }
+.balloon1{    width: 160px;  right: 750px;   top: 40px;}
+.balloon2{position: fixed; width: 321px;   right: 70px; top: 330px;}
+.cloud{top:30px; width:100px;left:36%;}
+@keyframes cloud { from { left:36%;}  to { left:37%;} }
+@-webkit-keyframes cloud { from { left:36%;}  to { left:37%;} }
+.cloudtree{width: 283px; top: 20px}
+.pigeon1{ position: fixed;width: 80px; z-index: 3}
+.pigeon2{ position: fixed;width: 120px}
+@keyframes pigeon2 { from {  top:90px; right: 840px;}  to {  top:105px; right: 820px;} }
+@-webkit-keyframes pigeon2{ from { top:90px; right:840px;}  to {  top:105px; right:820px;} }
+.pigeon3{ position: fixed;width: 50px}
+.cloudman{ position: fixed; width: 450px;right: -150px;bottom:60px; animation: cloudman 3s linear  infinite alternate; -webkit-animation: cloudman 3s linear  infinite alternate;}
+@keyframes cloudman { from { right: -150px;}  to { right: -170px;} }
+@-webkit-keyframes cloudman { from { right: -150px;}  to { right: -170px;} }
+.txt_area{ width: 300px; margin-left: 20px; padding-top: 10px;}
+.case_logo{display: block; width: 353px; position: relative; margin: 0 auto; }
+.case_Q{display: block; width: 100% }
+.family_name{ background: none; border: 3.5px solid #C79A16; width: 140px; height:120px; text-align: center; font-size: 30px; display: block; margin: 10px auto 30px}
+.gift{ margin-bottom: 0px;}
+#step_page .cloud3{ display: none;}
+#step_page .pigeon2{z-index:4;position: absolute; width: 90px; top:60px;left: 28%;animation: pigeon2_2 1.5s linear  infinite alternate; -webkit-animation: pigeon2_2 1.5s linear  infinite alternate;}
+@keyframes pigeon2_2 { from {  top:60px; left: 28%;}  to {  top:75px; left: 30%;} }
+@-webkit-keyframes pigeon2_2{ from { top:60px; left: 28%;}  to {  top:75px; left: 30%;} }
+#step_page .balloon1{left: 30%;}
+#step_page .balloon2{ position: fixed; width: 250px; right:-10px; top: 260px;}
+#step_page .cloudman{ position: fixed; right: -120px; bottom: 90px; animation: cloudman2 3s linear  infinite alternate; -webkit-animation: cloudman2 3s linear  infinite alternate;}
+@keyframes cloudman2 { from { right: -120px;}  to { right: -140px;} }
+@-webkit-keyframes cloudman2 { from { right: -120px;}  to { right: -140px;} }
+#step2{ background: none; z-index: 1}
+#step_page .cloudtree2{ display: none;}
+#step_page2 .cloudtree2{ display: none;}
+.txt_area{ width: 400px; margin-left:45px;}
+.slick-slider{ margin-bottom: 0 !important}
+.case_logo{display: block;}
+.case_Q{display: block; }
+.gift{ margin-bottom: 20px;}
+.man{ width: 140px; height: 200px; display: block; margin: 0 auto; background: url("../images/man.png") center center no-repeat; background-size: cover; font-size: 36px; color: #746432; font-weight: bolder;  line-height: 190px; text-align: center;}
+@keyframes who { from { font-size: 42px;} to { font-size: 36px;} }
+@-webkit-keyframes who { from {font-size:42px;} to { font-size: 36px;} }
+.result{ text-align: center; font-weight: bolder; font-size: 20px; color: #352a23; margin: 10px 0; padding-bottom: 30px; line-height: 1.5em; border-bottom: 1px solid #c9b791}
+.who{ font-size: 30px; color: #746432; font-weight: bolder; line-height:40px; display: block; margin: 0 auto; text-align: center; }
+.btn3_txt{ width: 300px; display: block; margin: 0 auto 20px;}
+#step_page2{ overflow-x: hidden; overflow-y: visible }
+.tree{ position: absolute; left: -150px; top: -20px;}
+.case_logo_2{ width:353px; margin: 0 auto 20px; position: relative; top: 50px; display: block;}
+.form{ width: 660px; margin: 60px auto 0}
+.form .case_Q{ width: 353px; margin: 0 auto 20px;  display: block;}
+.form ul{ width: 100%; margin-bottom: 20px; float: left;}
+.form ul li{ width: 100%; margin:10px 0px; height: 46px; float: left; list-style: none;}
+.form ul li img{ width: 260px; display:block; float: left;}
+.form ul li input{ border: 0; line-height: 36px; width: 300px; font-size: 20px; padding:5px 10px;}
+.memo{ position: relative; z-index: 5; width: 1000px; margin: 0 auto 30px;}
+.memo ol{ font-size: 13px; font-family: "微軟正黑體"}
+.memo ol li{ margin-bottom: 5px; list-style: decimal outside; margin-left: 20px; line-height: 1.4em}
+.btn3{  width: 300px; display: block; margin:10px auto 40px; cursor: pointer; z-index: 9; position: relative;}
+.btn3 img{ width: 100%}
+.slick-prev{ left: 65px !important}
+.slick-next{ right: 65px !important}
+#step_page2 .cloudtree,#step_page2 .tree{ position: fixed;}
+#step_page2 .cloudman{  width: 340px;right: -120px; bottom:180px; animation: cloudman3 3s linear  infinite alternate; -webkit-animation: cloudman3 3s linear  infinite alternate;}
+@keyframes cloudman3 { from { right: -100px;}  to { right: -120px;} }
+@-webkit-keyframes cloudman3 { from { right: -100px;}  to { right: -120px;} }
+#step_page2 .balloon2{position:absolute; width: 200px; right:190px; top: 180px;}
+#step_page2 .balloon1{left: 540px;  top: 20px;  width: 120px;}
+#step_page2 .pigeon1{position:absolute;  width: 100px;animation: pigeon4_1 1s linear  infinite alternate; -webkit-animation: pigeon4_1 1s linear  infinite alternate;}
+@keyframes pigeon4_1 { from { top:100px; right: 250px;}  to { top:110px; right: 260px;} }
+@-webkit-keyframes pigeon4_1{ from { top:100px; right:250px;}  to { top:110px; right: 260px;} }
+#step_page2 .pigeon3{ position: fixed;  width: 80px;}
+#step_page2 .pigeon2{z-index:4;position: fixed;top:190px; right: 1270px; z-index: 2;animation: pigeon4_2 1s linear  infinite alternate; -webkit-animation: pigeon4_2 1s linear  infinite alternate;}
+@keyframes pigeon4_2 { from {  top:190px; right: 1270px;}  to {  top:165px; right: 1290px;} }
+@-webkit-keyframes pigeon4_2{ from { top:190px; right:1270px;}  to {  top:165px; right:1290px;} }
+#step_page2 .cloud{display: none;}
+.end_page .cloud2{ width: 200px;position: fixed; top: 240px; left: -90px; z-index: 1;animation: cloud5_2 3s linear  infinite alternate; -webkit-animation: cloud5_2 3s linear  infinite alternate;}
+@keyframes cloud5_2 { from {left: -90px; }  to { left: -80px; } }
+@-webkit-keyframes cloud5_2 { from { left: -90px; }  to { left: -80px; } }
+.end_page .cloud3{position:fixed;  width: 300px;position: absolute; top: 460px; left: -50px; z-index: 10;animation: cloud5_3 3s linear  infinite alternate; -webkit-animation: cloud5_3 3s linear  infinite alternate;}
+@keyframes cloud5_3 { from {left: -70px; }  to { left: -50px; } }
+@-webkit-keyframes cloud5_3 { from { left: -70px; }  to { left: -50px; } }
+.end_page .cloud4{ position:fixed; width: 300px; top: 240px; right: -110px; z-index: 1;animation: cloud5_4 3s linear  infinite alternate; -webkit-animation: cloud5_4 3s linear  infinite alternate;}
+@keyframes cloud5_4 { from { right: -110px; }  to { right: -120px; } }
+@-webkit-keyframes cloud5_4 { from {  right: -110px; }  to {  right:-120px; } }
+.line{ width: 150px; display: block; margin: 0 auto 50px; position: relative; top: 40px;}
+#step_page2 .cloudman2{ position:fixed; width:500px;right: -120px; top:initial; bottom: 30px; animation: cloudman5_2 3s linear  infinite alternate; -webkit-animation: cloudman5_2 3s linear  infinite alternate;}
+@keyframes cloudman5_2 { from { right: -100px;}  to { right: -120px;} }
+@-webkit-keyframes cloudman5_2 { from { right: -100px;}  to { right: -120px;} }
+#step_page2 .emperor2{ width:400px; display: block; position: fixed; bottom: 0; left: 50px; z-index: 9}
+.end_info{ width:500px; position: relative; display: block; margin: 0 auto }
+
+}
+
+@media screen and (min-width:1561px) and (max-width:1680px){
+.chosen_gift{ width: 300px; display: block; position: absolute; left: 14vw; bottom: 210px;animation:chosen_gift 3s linear  infinite alternate; -webkit-animation: chosen_gift 3s linear  infinite alternate;}
+@keyframes chosen_gift { from { left:19 vw; } to { left:3vw; } }
+@-webkit-keyframes chosen_gift { from {left: 19vw; } to { left:3vw; } }
+}
+
+
+@media screen and (min-width:1441px) and (max-width:1560px){
+.chosen_gift{ width: 300px; display: block; position: absolute; left: 13vw; bottom: 210px;animation:chosen_gift 3s linear  infinite alternate; -webkit-animation: chosen_gift 3s linear  infinite alternate;}
+@keyframes chosen_gift { from { left:18 vw; } to { left:3vw; } }
+@-webkit-keyframes chosen_gift { from {left: 18vw; } to { left:3vw; } }
+}
+
+
+@media screen and (min-width:1300px) and (max-width:1440px){
+body{    overflow-y: visible;}
+#home,#home .content{ width: 55vw;  top: 5%; }
+.content{ top: 40px; background-position: top right; height: initial}
+.content .home_txt{ display: block; }
+.btn1{  width: 300px; }
+.balloon1{    width: 120px; right: 740px; top: 70px;}
+.balloon2{position: fixed; width: 230px;    width: 190px; right: 40px;}
+.cloud{top:30px; width: 60px;}
+.cloudtree{width: 200px; top: 20px}
+.pigeon1{ position: fixed;width: 80px; z-index: 3}
+.pigeon2{ position: fixed;width: 60px}
+@keyframes pigeon2 { from {  top:60px; right: 800px;}  to {  top:75px; right: 780px;} }
+@-webkit-keyframes pigeon2{ from { top:60px; right:800px;}  to {  top:75px; right:780px;} }
+.pigeon3{ position: fixed;width: 50px}
+.cloudman{ position: fixed; width: 350px;right: -150px;bottom:60px; animation: cloudman 3s linear  infinite alternate; -webkit-animation: cloudman 3s linear  infinite alternate;}
+@keyframes cloudman { from { right: -150px;}  to { right: -170px;} }
+@-webkit-keyframes cloudman { from { right: -150px;}  to { right: -170px;} }
+
+.txt_area{ width: 300px; margin-left: 40px; padding-top: 20px;}
+.case_logo{display: block; width: 353px; position: relative; margin: 0 auto; }
+.case_Q{display: block; width: 100% }
+.family_name{ background: none; border: 3.5px solid #C79A16; width: 140px; height:80px; text-align: center; font-size: 30px; display: block; margin: 10px auto 20px}
+.gift{ margin-bottom: 0px;}
+#step_page .cloud3{ display: none;}
+#step_page .pigeon2{z-index:4;position: absolute; top:60px; right:630px;animation: pigeon2_2 1.5s linear  infinite alternate; -webkit-animation: pigeon2_2 1.5s linear  infinite alternate;}
+@keyframes pigeon2_2 { from {  top:60px; right: 630px;}  to {  top:75px; right: 610px;} }
+@-webkit-keyframes pigeon2_2{ from { top:60px; right:630px;}  to {  top:75px; right:610px;} }
+#step_page .balloon2{ position: fixed; width: 250px; right:-10px; top: 200px;}
+#step_page .cloudman{ position: fixed; right: -120px; bottom: 90px; animation: cloudman2 3s linear  infinite alternate; -webkit-animation: cloudman2 3s linear  infinite alternate;}
+@keyframes cloudman2 { from { right: -120px;}  to { right: -140px;} }
+@-webkit-keyframes cloudman2 { from { right: -120px;}  to { right: -140px;} }
+#step2{ background: none; z-index: 1}
+#step_page .cloudtree2{ display: none;}
+#step_page2 .cloudtree2{ display: none;}
+.txt_area{ width: 400px; margin-left: 65px;}
+.case_logo{display: block;}
+.case_Q{display: block; }
+.gift{ margin-bottom: 20px;}
+.man{ width: 120px; height: 160px; display: block; margin: 0 auto; background: url("../images/man.png") center center no-repeat; background-size: cover; font-size: 30px; color: #746432; font-weight: bolder;  line-height: 160px; text-align: center;}
+@keyframes who { from { font-size:30px;} to { font-size: 36px;} }
+@-webkit-keyframes who { from {font-size:30px;} to { font-size: 36px;} }
+.result{ text-align: center; font-weight: bolder; font-size: 18px; color: #352a23; margin: 20px 0; padding-bottom: 30px; line-height: 1.5em; border-bottom: 1px solid #c9b791}
+.who{ font-size: 24px; color: #746432; font-weight: bolder; line-height: 36px; display: block; margin: 0 auto; text-align: center; }
+.btn3_txt{ width: 300px; display: block; margin: 0 auto 20px;}
+.chosen_gift{ width: 300px; display: block; position: absolute; left:18vw; bottom: 190px;animation:chosen_gift 3s linear  infinite alternate; -webkit-animation: chosen_gift 3s linear  infinite alternate;}
+@keyframes chosen_gift { from { left: 15vw; } to { left: 20vw; } }
+@-webkit-keyframes chosen_gift { from { left: 15vw; } to { left: 20vw; } }
+#step_page2{ overflow-x: hidden; overflow-y: visible }
+.tree{ position: absolute; left: -150px; top: -50px;}
+.case_logo_2{ width:353px; margin: 0 auto 20px; position: relative; top: 50px; display: block;}
+.form{ width: 660px; margin: 60px auto 0}
+.form .case_Q{ width: 353px; margin: 0 auto 20px;  display: block;}
+.form ul{ width: 100%; margin-bottom: 20px; float: left;}
+.form ul li{ width: 100%; margin:10px 0px; height: 46px; float: left; list-style: none;}
+.form ul li img{ width: 260px; display:block; float: left;}
+.form ul li input{    border: 0; line-height: 36px;  width: 350px; font-size: 20px; padding: 5px 10px;  margin-left: -56px;}
+.memo{ position: relative; z-index: 5; width: 1000px; margin: 0 auto 30px;}
+.memo ol{ font-size: 13px; font-family: "微軟正黑體"}
+.memo ol li{ margin-bottom: 5px; list-style: decimal outside; margin-left: 20px; line-height: 1.4em}
+.btn3{  width: 300px; display: block; margin:10px auto 40px; cursor: pointer; z-index: 9; position: relative;}
+.btn3 img{ width: 100%}
+.slick-prev{ left: 65px !important}
+.slick-next{ right: 65px !important}
+#step_page2 .cloudtree,#step_page2 .tree{ position: fixed;}
+#step_page2 .cloudman{  width: 340px;right: -120px; bottom:180px; animation: cloudman3 3s linear  infinite alternate; -webkit-animation: cloudman3 3s linear  infinite alternate;}
+@keyframes cloudman3 { from { right: -100px;}  to { right: -120px;} }
+@-webkit-keyframes cloudman3 { from { right: -100px;}  to { right: -120px;} }
+#step_page2 .balloon2{position:absolute; width: 200px; right:190px; top: 180px;}
+#step_page2 .balloon1{right: 870px;  top: 20px;  width: 190px;}
+#step_page2 .pigeon1{position:absolute;  width: 100px;animation: pigeon4_1 1s linear  infinite alternate; -webkit-animation: pigeon4_1 1s linear  infinite alternate;}
+@keyframes pigeon4_1 { from { top:100px; right: 250px;}  to { top:110px; right: 260px;} }
+@-webkit-keyframes pigeon4_1{ from { top:100px; right:250px;}  to { top:110px; right: 260px;} }
+#step_page2 .pigeon3{ position: fixed;  width: 80px;}
+#step_page2 .pigeon2{z-index:4;position: fixed;top:190px; right: 1270px; z-index: 2;animation: pigeon4_2 1s linear  infinite alternate; -webkit-animation: pigeon4_2 1s linear  infinite alternate;}
+@keyframes pigeon4_2 { from {  top:190px; right: 1270px;}  to {  top:165px; right: 1290px;} }
+@-webkit-keyframes pigeon4_2{ from { top:190px; right:1270px;}  to {  top:165px; right:1290px;} }
+#step_page2 .cloud{display: none;}
+.end_page .cloud2{ width: 200px;position: fixed; top: 240px; left: -90px; z-index: 1;animation: cloud5_2 3s linear  infinite alternate; -webkit-animation: cloud5_2 3s linear  infinite alternate;}
+@keyframes cloud5_2 { from {left: -90px; }  to { left: -80px; } }
+@-webkit-keyframes cloud5_2 { from { left: -90px; }  to { left: -80px; } }
+.end_page .cloud3{position:fixed;  width: 300px;position: absolute; top: 460px; left: -50px; z-index: 10;animation: cloud5_3 3s linear  infinite alternate; -webkit-animation: cloud5_3 3s linear  infinite alternate;}
+@keyframes cloud5_3 { from {left: -70px; }  to { left: -50px; } }
+@-webkit-keyframes cloud5_3 { from { left: -70px; }  to { left: -50px; } }
+.end_page .cloud4{ position:fixed; width: 300px; top: 240px; right: -110px; z-index: 1;animation: cloud5_4 3s linear  infinite alternate; -webkit-animation: cloud5_4 3s linear  infinite alternate;}
+@keyframes cloud5_4 { from { right: -110px; }  to { right: -120px; } }
+@-webkit-keyframes cloud5_4 { from {  right: -110px; }  to {  right:-120px; } }
+.line{ width: 150px; display: block; margin: 0 auto 50px; position: relative; top: 40px;}
+#step_page2 .cloudman2{ position:fixed; width: 400px;right: -120px; top:400px; animation: cloudman5_2 3s linear  infinite alternate; -webkit-animation: cloudman5_2 3s linear  infinite alternate;}
+@keyframes cloudman5_2 { from { right: -100px;}  to { right: -120px;} }
+@-webkit-keyframes cloudman5_2 { from { right: -100px;}  to { right: -120px;} }
+#step_page2 .emperor2{ width:360px; display: block; position: fixed; bottom: 0; left: 50px; z-index: 9}
+.end_info{ width:500px; position: relative; display: block; margin: 0 auto }
+.last_info{ margin-bottom: 40px;}
+
+}
+
+@media screen and (min-width:1200px) and (max-width:1299px){
+body{ overflow-x: hidden;    overflow-y: visible;}	
+#home,#home .content{ width: 63vw; transform:scale(0.95,0.95); top: 5%; right: -3.15vw}
+.content{ top: 40px; background-position: top right; height: initial}
+.content .home_txt{ display: block; }
+.btn1{  width: 300px; }
+.balloon1{ right:760px; top: 30px; width: 140px;}
+.balloon2{ width: 230px;}
+.cloud{top:110px; width: 60px;}
+.cloudtree{width: 200px; top: 20px}
+.pigeon1{ position: fixed;width: 80px; z-index: 3}
+.pigeon2{ position: fixed;width: 60px}
+.pigeon3{ position: fixed;width: 50px}
+.cloudman{ position: fixed; width: 330px;right: -150px;bottom: 30px; animation: cloudman 3s linear  infinite alternate; -webkit-animation: cloudman 3s linear  infinite alternate;}
+@keyframes cloudman { from { right: -150px;}  to { right: -170px;} }
+@-webkit-keyframes cloudman { from { right: -150px;}  to { right: -170px;} }
+
+.txt_area{  padding-top: 20px;width: 353px; margin-left: 65px;}
+.case_logo{display: block; width: 353px; position: relative; margin: 0 auto; }
+.case_Q{display: block; width: 100% }
+.family_name{ background: none; border: 3.5px solid #C79A16; width: 140px; height:70px; text-align: center; font-size: 30px; display: block; margin: 0px auto 10px}
+.gift{ margin-bottom: 0px;}
+.slick-prev, .slick-next{ width: 40px !important; height: 40px !important;}
+.slick-slider{ margin-top: -30px;}
+.slick-slide img{ width: 160px !important; margin-bottom: 10px !important;}
+#step_page .cloud3{ display: none;}
+#step_page .pigeon2{z-index:4;position: absolute; top:60px; right:630px;animation: pigeon2_2 1.5s linear  infinite alternate; -webkit-animation: pigeon2_2 1.5s linear  infinite alternate;}
+@keyframes pigeon2_2 { from {  top:60px; right: 630px;}  to {  top:75px; right: 610px;} }
+@-webkit-keyframes pigeon2_2{ from { top:60px; right:630px;}  to {  top:75px; right:610px;} }
+#step_page .balloon2{ position: fixed; width: 250px; right:-10px; top: 200px;}
+#step_page .cloudman{ position: fixed; right: -120px; bottom: 70px; animation: cloudman2 3s linear  infinite alternate; -webkit-animation: cloudman2 3s linear  infinite alternate;}
+@keyframes cloudman2 { from { right: -120px;}  to { right: -140px;} }
+@-webkit-keyframes cloudman2 { from { right: -120px;}  to { right: -140px;} }
+#step2{ background: none; z-index: 1}
+#step_page .cloudtree2{ display: none;}
+#step_page2 .cloudtree2{ display: none;}
+.case_logo{display: block;}
+.case_Q{display: block; }
+.gift{ margin-bottom: 0px;}
+.man{ width: 100px; height: 130px; display: block; margin: 0 auto; background: url("../images/man.png") center center no-repeat; background-size: cover; font-size: 30px; color: #746432; font-weight: bolder;  line-height: 135px; text-align: center;}
+@keyframes who { from { font-size:30px;} to { font-size: 36px;} }
+@-webkit-keyframes who { from {font-size:30px;} to { font-size: 36px;} }
+.result{ text-align: center; font-weight: bolder; font-size: 15px; color: #352a23; margin: 10px 0 20px; padding-bottom: 20px; line-height: 1.5em; border-bottom: 1px solid #c9b791}
+.who{ font-size: 22px; color: #746432; font-weight: bolder; line-height: 30px; display: block; margin: 0 auto; text-align: center; }
+.btn3_txt{ width: 230px; display: block; margin: 0 auto 20px;}
+.chosen_gift{ width: 300px; display: block; position: absolute; left: 110px; bottom: 160px;animation:chosen_gift 3s linear  infinite alternate; -webkit-animation: chosen_gift 3s linear  infinite alternate;}
+@keyframes chosen_gift { from { left: 90px; bottom: 170px;} to { left: 130px; bottom: 170px;} }
+#step_page2{ overflow-x: hidden; overflow-y: visible }
+.tree{ position: absolute; left: -150px; top: -50px;}
+.case_logo_2{ width:353px; margin: 0 auto 20px; position: relative; top: 50px; display: block;}
+.form{ width: 660px; margin: 60px auto 0}
+.form .case_Q{ width: 353px; margin: 0 auto 20px;  display: block;}
+.form ul{ width: 100%; margin-bottom: 20px; float: left;}
+.form ul li{ width: 100%; margin:10px 0px; height: 46px; float: left; list-style: none;}
+.form ul li img{ width: 260px; display:block; float: left;}
+.form ul li input{ border: 0; line-height: 36px; width: 300px; font-size: 20px; padding:5px 10px;}
+.memo{ position: relative; z-index: 5; width: 900px; margin: 0 auto 30px;}
+.memo ol{ font-size: 13px; font-family: "微軟正黑體"}
+.memo ol li{ margin-bottom: 5px; list-style: decimal outside; margin-left: 20px; line-height: 1.4em}
+.btn3{  width: 300px; display: block; margin:10px auto 40px; cursor: pointer; z-index: 9; position: relative;}
+.btn3 img{ width: 100%}
+#step_page2 .cloudtree,#step_page2 .tree{ position: fixed;}
+#step_page2 .cloudman{  width: 340px;right: -120px; bottom:180px; animation: cloudman3 3s linear  infinite alternate; -webkit-animation: cloudman3 3s linear  infinite alternate;}
+@keyframes cloudman3 { from { right: -100px;}  to { right: -120px;} }
+@-webkit-keyframes cloudman3 { from { right: -100px;}  to { right: -120px;} }
+#step_page2 .balloon2{width: 200px; right:190px; top: 180px;}
+#step_page2 .balloon1{right: 830px;  top: 20px;  width: 120px;}
+#step_page2 .pigeon1{ width: 100px;animation: pigeon4_1 1s linear  infinite alternate; -webkit-animation: pigeon4_1 1s linear  infinite alternate;}
+@keyframes pigeon4_1 { from { top:100px; right: 250px;}  to { top:110px; right: 260px;} }
+@-webkit-keyframes pigeon4_1{ from { top:100px; right:250px;}  to { top:110px; right: 260px;} }
+#step_page2 .pigeon3{ width: 80px;}
+#step_page2 .pigeon2{z-index:4;position: absolute; top:190px; right: 970px; z-index: 2;animation: pigeon4_2 1s linear  infinite alternate; -webkit-animation: pigeon4_2 1s linear  infinite alternate;}
+@keyframes pigeon4_2 { from {  top:190px; right: 970px;}  to {  top:165px; right: 990px;} }
+@-webkit-keyframes pigeon4_2{ from { top:190px; right:970px;}  to {  top:165px; right:990px;} }
+#step_page2 .cloud{display: none;}
+.end_page .cloud2{ width: 200px;position: absolute; top: 240px; left: -90px; z-index: 1;animation: cloud5_2 3s linear  infinite alternate; -webkit-animation: cloud5_2 3s linear  infinite alternate;}
+@keyframes cloud5_2 { from {left: -90px; }  to { left: -80px; } }
+@-webkit-keyframes cloud5_2 { from { left: -90px; }  to { left: -80px; } }
+.end_page .cloud3{position:fixed;  width: 300px;position: absolute; top: 460px; left: -50px; z-index: 10;animation: cloud5_3 3s linear  infinite alternate; -webkit-animation: cloud5_3 3s linear  infinite alternate;}
+@keyframes cloud5_3 { from {left: -70px; }  to { left: -50px; } }
+@-webkit-keyframes cloud5_3 { from { left: -70px; }  to { left: -50px; } }
+.end_page .cloud4{ position:fixed; width: 300px; top: 240px; right: -90px; z-index: 1;animation: cloud5_4 3s linear  infinite alternate; -webkit-animation: cloud5_4 3s linear  infinite alternate;}
+@keyframes cloud5_4 { from { right: -90px; }  to { right: -80px; } }
+@-webkit-keyframes cloud5_4 { from {  right: -90px; }  to {  right:-80px; } }
+.line{ width: 150px; display: block; margin: 0 auto 50px; position: relative; top: 40px;}
+#step_page2 .cloudman2{ position:fixed; width: 400px;right: -120px; top:400px; animation: cloudman5_2 3s linear  infinite alternate; -webkit-animation: cloudman5_2 3s linear  infinite alternate;}
+@keyframes cloudman5_2 { from { right: -100px;}  to { right: -120px;} }
+@-webkit-keyframes cloudman5_2 { from { right: -100px;}  to { right: -120px;} }
+#step_page2 .emperor2{ width:360px; display: block; position: fixed; bottom: 0; left: 50px; z-index: 9}
+.end_info{ width:430px; position: relative; display: block; margin: 0 auto }
+.last_info{ margin-bottom: 20px;}
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1199px){
+body{ overflow-x:hidden; overflow-y: visible  }
+#KV{ background: none}
+.balloon1,.balloon2{display: none;}
+#home_page .tree{position: fixed;  width:500px; bottom: 150px; top: initial;   right: -210px; transform:rotateY(180deg);left: initial; z-index: 4; display: block;}
+.emperor3{ position: fixed; width:32%; right: -3%; z-index: 9;  bottom: 0; display: block;}
+.cloud { z-index: 2; position: absolute;right: 620px;  top: 470px;width: 112px;}
+#home_page .cloud2 { display: block;z-index: 2; position: absolute;  left: -120px; bottom: 40px; width: 400px;}
+.main_container{height: initial; width: 100vw; position: relative; width:100vw; float: none; }
+#home .content{ background: none; width: 100vw; top: 50px;}
+#step2{ width: 600px; margin: 0 auto}
+#step2 .content{ width: 100%}
+.content{top: 20px; height: initial}
+.home_txt_area{ width: 100vw}
+.home_txt{width: 500px; position: relative; margin: 20px auto; display: block;}
+.btn1{ margin-bottom: 40px}
+.cloudtree{position: fixed;  transform:rotateY(180deg); width: 283px;  left:  -80px; top: 210px; animation: cloudtree 2s linear  infinite alternate; -webkit-animation: cloudtree 2s linear  infinite alternate;}
+@keyframes cloudtree { from {  left:  -70px;}  to {  left:  -90px;} }
+@-webkit-keyframes cloudtree { from {  left:  -70px;}  to {  left:  -90px;} }
+.pigeon1{ display: none; z-index: 1; right: 10px; top:40px;  animation: pigeon1 2s linear  infinite alternate; -webkit-animation: pigeon1 2s linear  infinite alternate;}
+@keyframes pigeon1 { from { right: 10px; top:40px; }  to { right: 20px; top:50px; } }
+@-webkit-keyframes pigeon1{ from {right: 10px; top:40px; }  to { right: 20px; top:50px; } }
+.pigeon2{position: fixed; z-index: 1;left: 10px; top:140px; width: 90px;  animation: pigeon2 2s linear  infinite alternate; -webkit-animation: pigeon2 2s linear  infinite alternate;}
+@keyframes pigeon2 { from {left: 30px; top:140px; }  to { left: 20px; top:150px; } }
+@-webkit-keyframes pigeon2{ from {left: 30px; top:140px; }  to { left: 20px; top:150px; } }
+.pigeon3{position: fixed; z-index: 1;right: 110px; top:150px; width: 80px;  animation: pigeon3 2s linear  infinite alternate; -webkit-animation: pigeon3 2s linear  infinite alternate;}
+@keyframes pigeon3 { from {right: 110px; top:150px; }  to {right: 90px; top:170px; } }
+@-webkit-keyframes pigeon3{ from {right: 110px; top:150px; }  to {right: 90px; top:170px;  } }
+.cloudman{ position: fixed; width: 320px; top: 10px; right:-100px;animation: cloudman 3s linear  infinite alternate; -webkit-animation: cloudman 3s linear  infinite alternate;}
+@keyframes cloudman { from {right:-100px;}  to { right:-140px;} }
+@-webkit-keyframes cloudman { from { right:-100px;}  to { right:-140px;} }
+.people_count{ background:url("../images/number_bg.png") no-repeat center center; background-size: cover; color: #fff;font-size: 16px;line-height: 60px; width: 400px; left: 1px; text-align: center; margin: 0 auto; position: relative;}
+.people_count span.number{ text-decoration: none;display: block; margin-left: -90px;}
+.people_count span.count_txt{ display: none;}
+.txt_area{ width: 80%; padding:1% 0; margin: 0 10% }
+.case_logo,.case_logo_2,.case_Q{ width: 320px; display: block;   margin: 0 auto;}
+#step_page .cloudman, #step_page2 .cloudman{ display: none;}
+#step_page .cloud3{ position: fixed; bottom: 30px; left: -80px; top: initial}
+#step_page .pigeon1, #step_page2 .pigeon1{  position: fixed;display: block; z-index: 10; right: 10px; top:120px; width: 100px;  animation: pigeon1 2s linear  infinite alternate; -webkit-animation: pigeon1 2s linear  infinite alternate;}
+@keyframes pigeon1 { from { right: 110px; top:120px; }  to { right: 120px; top:130px; } }
+@-webkit-keyframes pigeon1{ from {right: 110px; top:120px; }  to { right: 120px; top:130px; } }
+#step_page .pigeon2, #step_page2 .pigeon2{ position: fixed;z-index: 1;left: 10px; top:10px; width: 95px;  animation: pigeon2 2s linear  infinite alternate; -webkit-animation: pigeon2 2s linear  infinite alternate;}
+@keyframes pigeon2 { from {left: 30px; top:20px;}  to { left: 20px; top:10px;  } }
+@-webkit-keyframes pigeon2{ from {left: 30px; top:20px;}  to { left: 20px; top:10px;  } }
+#step_page .pigeon3, #step_page2 .pigeon3{  position: fixed;width: 80px; z-index: 9; transform:rotateY(180deg);animation: pigeon1_3 2s linear  infinite alternate; -webkit-animation: pigeon1_3 2s linear  infinite alternate;}
+@keyframes pigeon1_3 { from { left: 160px; top:140px; }  to { left: 180px; top:150px; } }
+@-webkit-keyframes pigeon1_3{ from {left: 160px; top:140px; }  to { left: 180px; top:150px; } }
+#step_page .cloudtree, #step_page2 .cloudtree{position: fixed; width: 280px; top: 50px;animation: cloudtree2 2s linear  infinite alternate; -webkit-animation: cloudtree2 2s linear  infinite alternate;}
+@keyframes cloudtree2 { from {  left:  -70px;}  to {  left:  -60px;} }
+@-webkit-keyframes cloudtree2 { from {  left:  -70px;}  to {  left:  -60px;} }
+#step_page .cloudtree2, #step_page2 .cloudtree2{ display: block; position: fixed; width: 283px; top: 23%; right: -90px}
+.slick-slide img{ width: 174px}
+.slick-prev:before, .slick-next:before{ font-size: 36px !important}
+.slick-next{ right: 95px !important}
+.slick-prev{ left: 95px !important}
+.family_name{width: 140px;  display: block;  height: 100px }
+.emperor_gift{margin-left: 20px; position: relative; width: 216px; float: left; height: 290px;}
+#step_page .emperor3{ position: relative; display: block; width: 216px;}
+#step_page .chosen_gift{ display: none;}
+#step_page .chosen_gift2{ z-index: 11; position:absolute;display: block;width: 100px; bottom: 80px; left: 30px;animation:gift2 2s linear  infinite alternate; -webkit-animation: gift2 2s linear  infinite alternate;}
+@keyframes gift2 { from {  left:  70px;}  to {  left:  30px;} }
+@-webkit-keyframes gift2 { from {  left: 70px;}  to {  left:  30px;} }
+#step_page2 .tree{ display: none;}
+#step_page .balloon2,#step_page2 .balloon2{ width: 240px; right: -10px; top: 400px}
+.man{ margin-right: 20px;position: relative; float: right; margin-top: 56px;  line-height: 230px; font-size: 40px;  width: 160px;  height: 240px;}
+@keyframes who { from { font-size:40px;} to { font-size: 46px;} }
+@-webkit-keyframes who { from {font-size:40px;} to { font-size: 46px;} }
+.result{font-size: 18px;}
+.btn3_txt {margin: 0 auto 20px; position: relative;}
+.form{ width: 100%}
+.form .case_Q{  width:260px;  display: block;}
+.form ul { float: none; padding-bottom: 20px;}
+.form ul li { float: none; height: 86px; display: block;}
+.form ul li img{ width: 260px; float: none; margin: 0 auto;}
+.form ul li input{ width: 260px; display: block;margin: 0 auto;}
+#step_page2 .btn2{  width:300px; position: relative; bottom: 0; margin-bottom: 50px}
+.memo{ width: 60%; border-top: 1px solid #c9b791}
+.memo ol{font-size: 14px; margin: 30px 0 90px;}
+.case_logo_2{ width: 320px;}
+#step_page2 .cloudman2{ position: fixed; width: 40%; top: initial; bottom: 20px; }
+#step_page2 .emperor2 { width: 30%; display: block; position: absolute;  bottom: 0; left: 0px; z-index: 9}
+.end_page .cloud2,.end_page .cloud4{ display: none;}
+.end_info{width: 400px;}
+.end_page .cloud3{ position: fixed; bottom: -50px; top: initial}
+.last_info{ margin-bottom: 40px;}
+.line{ width: 150px; top: 50px; margin-bottom: 30px;}
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px){
+body{ width: 100vw; overflow-x:hidden; overflow-y: visible }
+#KV{ background: none}
+.balloon1,.balloon2{position: fixed;}
+.balloon2{ right: -10px; width: 150px;}
+#home_page .tree{position: fixed;  width:480px; bottom: 250px; top: initial;   right: -260px; transform:rotateY(180deg);left: initial; z-index: 4; display: block;}
+.emperor3{ position: fixed; width: 45%; right: -3%; z-index: 9;  bottom: 0; display: block;}
+.cloud { z-index: 2; position: absolute;right: 620px;  top: 820px;width: 112px;}
+#home_page .cloud2 { display: block;z-index: 2; position: absolute;  left: -120px; bottom: 40px; width: 400px;}
+.main_container{height: initial; width: 100vw; position: relative; width:100vw; float: none; }
+#home .content{ background: none; width: 100vw; top: 200px}
+#step2{ width: 600px; margin: 0 auto}
+#step2 .content{ width: 100%}
+.content{top: 20px; height: initial}
+.home_txt_area{ width: 100vw}
+.home_txt{width: 500px; position: relative; margin: 20px auto; display: block;}
+.btn1{ margin-bottom: 40px}
+.cloudtree{position: fixed;  transform:rotateY(180deg); width: 283px;  left:  -80px; top: 210px; animation: cloudtree 2s linear  infinite alternate; -webkit-animation: cloudtree 2s linear  infinite alternate;}
+@keyframes cloudtree { from {  left:  -70px;}  to {  left:  -90px;} }
+@-webkit-keyframes cloudtree { from {  left:  -70px;}  to {  left:  -90px;} }
+.pigeon1{ display: none; z-index: 1; right: 10px; top:40px;  animation: pigeon1 2s linear  infinite alternate; -webkit-animation: pigeon1 2s linear  infinite alternate;}
+@keyframes pigeon1 { from { right: 10px; top:40px; }  to { right: 20px; top:50px; } }
+@-webkit-keyframes pigeon1{ from {right: 10px; top:40px; }  to { right: 20px; top:50px; } }
+.pigeon2{position: fixed; z-index: 1;left: 10px; top:140px; width: 90px;  animation: pigeon2 2s linear  infinite alternate; -webkit-animation: pigeon2 2s linear  infinite alternate;}
+@keyframes pigeon2 { from {left: 30px; top:140px; }  to { left: 20px; top:150px; } }
+@-webkit-keyframes pigeon2{ from {left: 30px; top:140px; }  to { left: 20px; top:150px; } }
+.pigeon3{position: fixed; z-index: 1;right: 110px; top:150px; width: 80px;  animation: pigeon3 2s linear  infinite alternate; -webkit-animation: pigeon3 2s linear  infinite alternate;}
+@keyframes pigeon3 { from {right: 110px; top:150px; }  to {right: 90px; top:170px; } }
+@-webkit-keyframes pigeon3{ from {right: 110px; top:150px; }  to {right: 90px; top:170px;  } }
+.cloudman{ position: fixed; width: 320px; top: 10px; right:-160px;animation: cloudman 3s linear  infinite alternate; -webkit-animation: cloudman 3s linear  infinite alternate;}
+@keyframes cloudman { from {right:-160px;}  to { right:-190px;} }
+@-webkit-keyframes cloudman { from { right:-160px;}  to { right:-190px;} }
+.people_count{ background:url("../images/number_bg.png") no-repeat center center; background-size: cover; color: #fff;font-size: 16px;line-height: 60px; width: 400px; left: 1px; text-align: center; margin: 0 auto; position: relative;}
+.people_count span.number{ text-decoration: none;display: block; margin-left: -90px;}
+.people_count span.count_txt{ display: none;}
+.txt_area{ width: 80%; padding: 20% 0; margin: 0 10% }
+.case_logo,.case_logo_2,.case_Q{ width: 320px; display: block;   margin: 0 auto;}
+#step_page .cloudman, #step_page2 .cloudman{ display: none;}
+#step_page .cloud3{ position: fixed; bottom: 30px; left: -80px; top: initial}
+#step_page .pigeon1, #step_page2 .pigeon1{ position: fixed; display: block; z-index: 10; right: 10px; top:120px; width: 100px;  animation: pigeon1 2s linear  infinite alternate; -webkit-animation: pigeon1 2s linear  infinite alternate;}
+@keyframes pigeon1 { from { right: 110px; top:120px; }  to { right: 120px; top:130px; } }
+@-webkit-keyframes pigeon1{ from {right: 110px; top:120px; }  to { right: 120px; top:130px; } }
+#step_page .pigeon2, #step_page2 .pigeon2{position: fixed; z-index: 1;left: 10px; top:10px; width: 95px;  animation: pigeon2 2s linear  infinite alternate; -webkit-animation: pigeon2 2s linear  infinite alternate;}
+@keyframes pigeon2 { from {left: 30px; top:20px;}  to { left: 20px; top:10px;  } }
+@-webkit-keyframes pigeon2{ from {left: 30px; top:20px;}  to { left: 20px; top:10px;  } }
+#step_page .pigeon3, #step_page2 .pigeon3{ width: 80px; z-index: 9; transform:rotateY(180deg);animation: pigeon1_3 2s linear  infinite alternate; -webkit-animation: pigeon1_3 2s linear  infinite alternate;}
+@keyframes pigeon1_3 { from { left: 160px; top:140px; }  to { left: 180px; top:150px; } }
+@-webkit-keyframes pigeon1_3{ from {left: 160px; top:140px; }  to { left: 180px; top:150px; } }
+#step_page .cloudtree, #step_page2 .cloudtree{position: fixed; width: 280px; top: 130px;animation: cloudtree2 2s linear  infinite alternate; -webkit-animation: cloudtree2 2s linear  infinite alternate;}
+@keyframes cloudtree2 { from {  left:  -70px;}  to {  left:  -60px;} }
+@-webkit-keyframes cloudtree2 { from {  left:  -70px;}  to {  left:  -60px;} }
+#step_page .cloudtree2, #step_page2 .cloudtree2{ display: block; position: fixed; width: 283px; top:42%; right: -90px}
+.slick-slide img{ width: 174px}
+.slick-prev:before, .slick-next:before{ font-size: 30px !important}
+.slick-next{ right: 95px !important}
+.slick-prev{ left: 95px !important}
+.family_name{width: 140px;  display: block;  height: 100px }
+.emperor_gift{margin-left: 20px; position: relative; width: 216px; float: left; height: 290px;}
+#step_page .emperor3{ position: relative; display: block; width: 216px;}
+#step_page .chosen_gift{ display: none;}
+#step_page .chosen_gift2{ z-index: 11; position:absolute;display: block;width: 100px; bottom: 80px; left: 30px;animation:gift2 2s linear  infinite alternate; -webkit-animation: gift2 2s linear  infinite alternate;}
+@keyframes gift2 { from {  left:  70px;}  to {  left:  30px;} }
+@-webkit-keyframes gift2 { from {  left: 70px;}  to {  left:  30px;} }
+#step_page2 .tree{ display: none;}
+#step_page .balloon2,#step_page2 .balloon2{ position: fixed; width: 240px; right: -10px; top:25%}
+.man{ margin-right: 20px;position: relative; float: right; margin-top: 56px;  line-height: 230px; font-size: 40px;  width: 160px;  height: 240px;}
+@keyframes who { from { font-size:40px;} to { font-size: 46px;} }
+@-webkit-keyframes who { from {font-size:40px;} to { font-size: 46px;} }
+.result{font-size: 18px;}
+.btn3_txt {margin: 0 auto 20px; position: relative;}
+.form{ width: 100%}
+.form .case_Q{  width:260px;  display: block;}
+.form ul { float: none; padding-bottom: 20px;}
+.form ul li { float: none; height: 86px; display: block;}
+.form ul li img{ width: 260px; float: none; margin: 0 auto;}
+.form ul li input{ width: 260px; display: block;margin: 0 auto;}
+#step_page2 .btn2{  width:300px; position: relative; bottom: 0; margin-bottom: 50px}
+.memo{ width: 60%; border-top: 1px solid #c9b791}
+.memo ol{font-size: 14px; margin: 30px 0 90px;}
+.case_logo_2{ width: 320px;}
+#step_page2 .cloudman2{ width: 40%; top: initial; bottom: 20px; position: fixed; }
+#step_page2 .emperor2 { width: 40%; display: block; position: absolute;  bottom: 0; left: 0px; z-index: 9}
+.end_page .cloud2,.end_page .cloud4{ position: fixed; }
+.end_info{width: 450px;}
+.end_page .cloud2{ position: fixed; bottom: 20%; z-index: 1; animation:none;right: 20%; left: initial;  width: 130px; top: initial}
+.end_page .cloud3{ position: fixed; bottom: 30%; z-index: 1; top: initial}
+.last_info{ margin-bottom: 40px;}
+.line{ width:150px; top: 60px; margin-bottom: 50px;}
+}
+
+@media screen and (min-width:901px) and (max-width:1023px){
+.emperor3{ width: 30%;}
+#home .content{ top: 30px;}
+.home_txt{ width: 410px;}
+.cloud{top: 80%}
+.people_count{font-size: 16px;line-height: 50px;}
+.txt_area{ padding: 2% 0}
+.family_name{ margin: 10px auto;}
+}
+
+@media screen and (min-width:601px) and (max-width:767px){
+body{ width: 100vw; overflow-x:hidden; overflow-y: visible  }
+#KV{ background: none}
+#home_page .cloudman{display: none;}
+.balloon1,#step_page2 .balloon1{ width: 80px; position: fixed; left:60px; top: 30px; }
+.balloon2,#step_page2 .balloon2{width: 100px; right: 50px; position: fixed; top:10px; }
+#home_page .tree{position: fixed;  width:350px; bottom: 100px; top: initial;   right: -220px; transform:rotateY(180deg);left: initial; z-index: 4; display: block;}
+.emperor3{ position: fixed; width: 25%; right: -3%; z-index: 9;  bottom: 0; display: block;}
+.cloud { z-index: 2; position: absolute;right: 620px;  top: 470px;width: 112px;}
+#home_page .cloud2 { display: block;z-index: 2; position: fixed;  left: -120px; bottom: -50px; width: 300px;}
+.main_container{height: initial; width: 100vw; position: relative; width:100vw; float: none; }
+#home .content{ background: none; width: 100vw}
+.content{top: 20px; width:400px; margin: 0 auto; height: initial; position: relative;}
+.home_txt_area{ width: 100vw; margin-top: 0px; padding-top: 60px;}
+.home_txt{width: 400px; position: relative; margin: 0 auto; display: block;}
+.btn1{ margin-bottom: 40px; width: 300px; }
+.cloudtree{position: fixed;  transform:rotateY(180deg); width: 283px;  left:  -180px; top: 10px; animation: cloudtree 2s linear  infinite alternate; -webkit-animation: cloudtree 2s linear  infinite alternate;}
+@keyframes cloudtree { from {  left:  -190px;}  to {  left:  -180px;} }
+@-webkit-keyframes cloudtree { from {  left:  -190px;}  to {  left:  -180px;} }
+.pigeon1{position: fixed;  width: 30px; z-index: 7; right: 10px; top:40px;  animation: pigeon1 2s linear  infinite alternate; -webkit-animation: pigeon1 2s linear  infinite alternate;}
+@keyframes pigeon1 { from { right: 10px; top:40px; }  to { right: 20px; top:50px; } }
+@-webkit-keyframes pigeon1{ from {right: 10px; top:40px; }  to { right: 20px; top:50px; } }
+.pigeon2{position: fixed; z-index: 5;left: 10px; top:140px; width: 50px;  animation: pigeon2 2s linear  infinite alternate; -webkit-animation: pigeon2 2s linear  infinite alternate;}
+@keyframes pigeon2 { from {left: 30px; top:140px; }  to { left: 20px; top:150px; } }
+@-webkit-keyframes pigeon2{ from {left: 30px; top:140px; }  to { left: 20px; top:150px; } }
+.pigeon3{position: fixed; z-index: 4;right: 30px; top:100px; width: 60px;  animation: pigeon3 2s linear  infinite alternate; -webkit-animation: pigeon3 2s linear  infinite alternate;}
+@keyframes pigeon3 { from {right: 20px; top:90px; }  to {right: 30px; top:110px; } }
+@-webkit-keyframes pigeon3{ from {right: 20px; top:90px; }  to {right: 30px; top:110px;  } }
+.cloudman{ position: fixed; width: 320px; top: 10px; right:-100px;animation: cloudman 3s linear  infinite alternate; -webkit-animation: cloudman 3s linear  infinite alternate;}
+@keyframes cloudman { from {right:-100px;}  to { right:-140px;} }
+@-webkit-keyframes cloudman { from { right:-100px;}  to { right:-140px;} }
+.people_count{ background:url("../images/number_bg.png") no-repeat center center; background-size: cover; color: #fff;font-size: 15px;  line-height: 50px;width: 330px; left: 1px; text-align: center; margin: 0 auto; position: relative;}
+.people_count span.number{ text-decoration: none;display: block; margin-left: -90px;}
+.people_count span.count_txt{ display: none;}
+.txt_area{ width: 80%; padding: 20px 0 20px; margin: 0 10% }
+.case_logo,.case_logo_2,.case_Q{ width: 270px; display: block;   margin: 0 auto;}
+#step_page .cloudman, #step_page2 .cloudman{ display: none;}
+#step_page .cloud3{ position: fixed; bottom: 30px; left: -190px; top: initial}
+#step_page .pigeon1, #step_page2 .pigeon1{ display: block; z-index: 10; right: 10px; top:20px; width: 60px;  animation: pigeon1 2s linear  infinite alternate; -webkit-animation: pigeon1 2s linear  infinite alternate;}
+@keyframes pigeon1 { from { right: 10px; top:20px; }  to { right: 20px; top:30px; } }
+@-webkit-keyframes pigeon1{ from {right: 10px; top:20px; }  to { right: 20px; top:30px; } }
+#step_page .pigeon2, #step_page2 .pigeon2{z-index: 1;left: 10px; top:10px; width: 35px;  animation: pigeon2 2s linear  infinite alternate; -webkit-animation: pigeon2 2s linear  infinite alternate;}
+@keyframes pigeon2 { from {left: 30px; top:20px;}  to { left: 20px; top:10px;  } }
+@-webkit-keyframes pigeon2{ from {left: 30px; top:20px;}  to { left: 20px; top:10px;  } }
+#step_page .pigeon3, #step_page2 .pigeon3{ width: 50px; z-index: 9; transform:rotateY(180deg);animation: pigeon1_3 2s linear  infinite alternate; -webkit-animation: pigeon1_3 2s linear  infinite alternate;}
+@keyframes pigeon1_3 { from { left: 60px; top:40px; }  to { left: 80px; top:50px; } }
+@-webkit-keyframes pigeon1_3{ from {left: 60px; top:40px; }  to { left: 80px; top:50px; } }
+#step_page .cloudtree, #step_page2 .cloudtree{position: fixed; width: 210px; top: 10px;animation: cloudtree2 2s linear  infinite alternate; -webkit-animation: cloudtree2 2s linear  infinite alternate;}
+@keyframes cloudtree2 { from {  left:  -120px;}  to {  left:  -110px;} }
+@-webkit-keyframes cloudtree2 { from {  left:  -120px;}  to {  left:  -110px;} }
+#step_page .cloudtree2, #step_page2 .cloudtree2{ display: block; position: fixed; width: 210px; top: 210px; right: -90px}
+.slick-slide img{ width: 120px}
+.slick-prev:before, .slick-next:before{ font-size: 30px !important}
+.family_name{width: 140px; margin: 10px auto 40px;}
+.emperor_gift{margin-left: 20px; position: relative; width: 150px; float: left; height: 200px;}
+#step_page .emperor3{ position: relative; display: block; width: 150px;}
+#step_page .chosen_gift{ display: none;}
+#step_page .chosen_gift2{ z-index: 11; position:absolute;display: block;width: 100px; bottom: 50px; left: 10px;animation:gift2 2s linear  infinite alternate; -webkit-animation: gift2 2s linear  infinite alternate;}
+@keyframes gift2 { from {  left:  10px;}  to {  left:  30px;} }
+@-webkit-keyframes gift2 { from {  left: 10px;}  to {  left:  30px;} }
+#step_page2 .tree{ display: none;}
+.man{ margin-right: 20px;position: relative; float: right; margin-top: 56px;}
+@keyframes who { from { font-size:40px;} to { font-size:32px;} }
+@-webkit-keyframes who { from {font-size:40px;} to { font-size: 32px;} }
+.result{font-size: 15px;}
+.btn3_txt {margin: 0 auto 20px; position: relative;}
+.form{ width: 100%}
+.form .case_Q{  width:260px;  display: block;}
+.form ul { float: none; padding-bottom: 20px;}
+.form ul li { float: none; height: 86px; display: block;}
+.form ul li img{ width: 260px; float: none; margin: 0 auto;}
+.form ul li input{ width: 260px; display: block;margin: 0 auto;}
+#step_page2 .btn2{  width:300px; position: relative; bottom: 0; margin-bottom: 50px}
+.memo{ width: 60%; border-top: 1px solid #c9b791}
+.memo ol{font-size: 14px; margin: 30px 0 90px;}
+.case_logo_2{ width: 320px;}
+#step_page2 .cloudman2{ width: 40%; top: initial; bottom: 20px; }
+#step_page2 .emperor2 { width: 30%; display: block; position: absolute;  bottom: 0; left: 0px; z-index: 9}
+.end_page .cloud2,.end_page .cloud4{ display: none;}
+.end_info{width: 340px;}
+.end_page .cloud3{ position: fixed; bottom: -50px; top: initial}
+.last_info{ margin-bottom: 40px;}
+.line{ top: 100px; margin-bottom: 110px;}
+}
+
+@media screen and (min-width:415px) and (max-width:600px){
+body{ width: 100vw; overflow-x:hidden; overflow-y: visible  }
+#KV{ background: none}
+#home_page .cloudman{display: none;}
+.balloon1,#step_page2 .balloon1{ width: 80px; position: fixed; left:60px; top: 30px; }
+.balloon2,#step_page2 .balloon2{width: 100px; right: 50px; position: fixed; top:10px; }
+#home_page .tree{position: fixed;  width:350px; bottom: 100px; top: initial;   right: -200px; transform:rotateY(180deg);left: initial; z-index: 4; display: block;}
+.emperor3{ position: fixed; width: 25%; right: -3%; z-index: 9;  bottom: 0; display: block;}
+.cloud {z-index: 2;position: absolute;  right: 60px;  top: 540px; width: 82px; animation:none; -webkit-animation:none;}
+#home_page .cloud2 { display: block;z-index: 2; position: fixed;  left: -120px; bottom: -50px; width: 300px;}
+.main_container{height: initial; width: 100vw; position: relative; width:100vw; float: none; }
+#home .content{ background: none; width: 100vw}
+.content{top: 20px; width:400px; margin: 0 auto; height: initial; position: relative;}
+.home_txt_area{ width: 100vw; padding-top: 60px;}
+.home_txt{width: 350px; position: relative; margin: 0 auto; display: block;}
+.btn1{ margin-bottom: 40px; width: 300px; }
+.cloudtree{position: fixed;  transform:rotateY(180deg); width: 283px;  left:  -180px; top: 10px; animation: cloudtree 2s linear  infinite alternate; -webkit-animation: cloudtree 2s linear  infinite alternate;}
+@keyframes cloudtree { from {  left:  -190px;}  to {  left:  -180px;} }
+@-webkit-keyframes cloudtree { from {  left:  -190px;}  to {  left:  -180px;} }
+.pigeon1{position: fixed;  width: 30px; z-index: 7; right: 10px; top:40px;  animation: pigeon1 2s linear  infinite alternate; -webkit-animation: pigeon1 2s linear  infinite alternate;}
+@keyframes pigeon1 { from { right: 10px; top:40px; }  to { right: 20px; top:50px; } }
+@-webkit-keyframes pigeon1{ from {right: 10px; top:40px; }  to { right: 20px; top:50px; } }
+.pigeon2{position: fixed; z-index: 5;left: 10px; top:140px; width: 50px;  animation: pigeon2 2s linear  infinite alternate; -webkit-animation: pigeon2 2s linear  infinite alternate;}
+@keyframes pigeon2 { from {left: 30px; top:140px; }  to { left: 20px; top:150px; } }
+@-webkit-keyframes pigeon2{ from {left: 30px; top:140px; }  to { left: 20px; top:150px; } }
+.pigeon3{position: fixed; z-index: 4;right: 30px; top:100px; width: 60px;  animation: pigeon3 2s linear  infinite alternate; -webkit-animation: pigeon3 2s linear  infinite alternate;}
+@keyframes pigeon3 { from {right: 20px; top:90px; }  to {right: 30px; top:110px; } }
+@-webkit-keyframes pigeon3{ from {right: 20px; top:90px; }  to {right: 30px; top:110px;  } }
+.cloudman{ position: fixed; width: 320px; top: 10px; right:-100px;animation: cloudman 3s linear  infinite alternate; -webkit-animation: cloudman 3s linear  infinite alternate;}
+@keyframes cloudman { from {right:-100px;}  to { right:-140px;} }
+@-webkit-keyframes cloudman { from { right:-100px;}  to { right:-140px;} }
+.people_count{ background:url("../images/number_bg.png") no-repeat center center; background-size: cover; color: #fff;font-size: 15px;  line-height: 50px;width: 330px; left: 1px; text-align: center; margin: 0 auto; position: relative;}
+.people_count span.number{ text-decoration: none;display: block; margin-left: -90px;}
+.people_count span.count_txt{ display: none;}
+.txt_area{ width: 80%; padding: 20px 0 20px; margin: 0 10% }
+.case_logo,.case_logo_2,.case_Q{ width: 270px; display: block;   margin: 0 auto;}
+#step_page .cloudman, #step_page2 .cloudman{ display: none;}
+#step_page .cloud3{ position: fixed; bottom: 30px; left: -190px; top: initial}
+#step_page .pigeon1, #step_page2 .pigeon1{ display: block; z-index: 10; right: 10px; top:20px; width: 60px;  animation: pigeon1 2s linear  infinite alternate; -webkit-animation: pigeon1 2s linear  infinite alternate;}
+@keyframes pigeon1 { from { right: 10px; top:20px; }  to { right: 20px; top:30px; } }
+@-webkit-keyframes pigeon1{ from {right: 10px; top:20px; }  to { right: 20px; top:30px; } }
+#step_page .pigeon2, #step_page2 .pigeon2{z-index: 1;left: 10px; top:10px; width: 35px;  animation: pigeon2 2s linear  infinite alternate; -webkit-animation: pigeon2 2s linear  infinite alternate;}
+@keyframes pigeon2 { from {left: 30px; top:20px;}  to { left: 20px; top:10px;  } }
+@-webkit-keyframes pigeon2{ from {left: 30px; top:20px;}  to { left: 20px; top:10px;  } }
+#step_page .pigeon3, #step_page2 .pigeon3{ width: 50px; z-index: 9; transform:rotateY(180deg);animation: pigeon1_3 2s linear  infinite alternate; -webkit-animation: pigeon1_3 2s linear  infinite alternate;}
+@keyframes pigeon1_3 { from { left: 60px; top:40px; }  to { left: 80px; top:50px; } }
+@-webkit-keyframes pigeon1_3{ from {left: 60px; top:40px; }  to { left: 80px; top:50px; } }
+#step_page .cloudtree, #step_page2 .cloudtree{position: fixed; width: 283px; top: 30px;animation: cloudtree2 2s linear  infinite alternate; -webkit-animation: cloudtree2 2s linear  infinite alternate;}
+@keyframes cloudtree2 { from {  left:  -150px;}  to {  left:  -160px;} }
+@-webkit-keyframes cloudtree2 { from {  left:  -150px;}  to {  left:  -160px;} }
+#step_page .cloudtree2, #step_page2 .cloudtree2{ display: block; position: fixed; width: 210px; top: 210px; right: -110px}
+.slick-slide img{ width: 120px}
+.slick-prev:before, .slick-next:before{ font-size: 30px !important}
+.family_name{width: 140px; margin: 10px auto 40px;}
+.emperor_gift{margin-left: 20px; position: relative; width: 150px; float: left; height: 200px;}
+#step_page .emperor3{ position: relative; display: block; width: 150px;}
+#step_page .chosen_gift{ display: none;}
+#step_page .chosen_gift2{ z-index: 11; position:absolute;display: block;width: 100px; bottom: 50px; left: 10px;animation:gift2 2s linear  infinite alternate; -webkit-animation: gift2 2s linear  infinite alternate;}
+@keyframes gift2 { from {  left:  10px;}  to {  left:  30px;} }
+@-webkit-keyframes gift2 { from {  left: 10px;}  to {  left:  30px;} }
+#step_page2 .tree{ display: none;}
+.man{ margin-right: 20px;position: relative; float: right; margin-top: 56px;}
+@keyframes who { from { font-size:40px;} to { font-size: 32px;} }
+@-webkit-keyframes who { from {font-size:40px;} to { font-size: 32px;} }
+.result{font-size: 15px;}
+.btn3_txt {margin: 0 auto 20px; position: relative;}
+.form{ width: 100%}
+.form .case_Q{  width:260px;  display: block;}
+.form ul { float: none; padding-bottom: 20px;}
+.form ul li { float: none; height: 86px; display: block;}
+.form ul li img{ width: 260px; float: none; margin: 0 auto;}
+.form ul li input{ width: 260px; display: block;margin: 0 auto;}
+#step_page2 .btn2{  width:300px; position: relative; bottom: 0; margin-bottom: 50px}
+.memo{ width: 60%; border-top: 1px solid #c9b791}
+.memo ol{font-size: 14px; margin: 30px 0 90px;}
+.case_logo_2{ width: 320px;}
+#step_page2 .cloudman2{ width: 40%; top: initial; bottom: 20px; }
+#step_page2 .emperor2 { width: 30%; display: block; position: absolute;  bottom: 0; left: 0px; z-index: 9}
+.end_page .cloud2,.end_page .cloud4{ display: none;}
+.end_info{width: 340px;}
+.end_page .cloud3{ position: fixed; bottom: -50px; top: initial}
+.last_info{ margin-bottom: 40px;}
+.line{ top: 60px; margin-bottom: 50px;}
+}
+
+
+@media screen and (min-width:375px) and (max-width:414px){
+body{width: 100vw;  overflow-x:hidden; overflow-y: visible;  }
+#KV{ background: none}
+#home_page{ height: initial ; padding-bottom: 20px;}
+.balloon1,.balloon2{display: none;}
+#home_page .tree{ position: fixed; width:120px;   right: -20px; transform:rotateY(180deg);left: initial; top: 110px; z-index: 9; display: block;}
+#home_page .emperor3{ position: relative; width: 36%;  margin-left: 31%;top: 0; z-index: 9; display: block;}
+#home_page .main_container{ top: -30px;}
+.main_container{ z-index: 10; height: initial; width: 100vw; position: relative; width:100vw; float: none; }
+#home .content{background: none; width: 100vw;  height: initial; margin-bottom: 110px;}
+.content{top: 0px; width: 100%; position: relative;}
+.home_txt_area{ width: 100vw}
+.home_txt_mobile{width: 100%; position: relative; margin: 0 auto 100px; display: block;}
+.home_txt{ display: none;}
+.btn1{z-index: 999;  display: block; left: 0; width: 100%; position: fixed; bottom: 0}
+.cloudtree{ transform:rotateY(180deg);position: fixed; width: 173px;  left:  -80px; top: 10px; animation: cloudtree 2s linear  infinite alternate; -webkit-animation: cloudtree 2s linear  infinite alternate;}
+@keyframes cloudtree { from {  left:  -70px;}  to {  left:  -90px;} }
+@-webkit-keyframes cloudtree { from {  left:  -70px;}  to {  left:  -90px;} }
+.pigeon1{ display: none; z-index: 1; right: 10px; top:40px;  animation: pigeon1 2s linear  infinite alternate; -webkit-animation: pigeon1 2s linear  infinite alternate;}
+@keyframes pigeon1 { from { right: 10px; top:40px; }  to { right: 20px; top:50px; } }
+@-webkit-keyframes pigeon1{ from {right: 10px; top:40px; }  to { right: 20px; top:50px; } }
+.pigeon2{position: fixed;z-index: 1;left: 10px; top:140px; width: 70px;  animation: pigeon2 2s linear  infinite alternate; -webkit-animation: pigeon2 2s linear  infinite alternate;}
+@keyframes pigeon2 { from {left: 30px; top:140px; }  to { left: 20px; top:130px; } }
+@-webkit-keyframes pigeon2{ from {left: 30px; top:140px; }  to { left: 20px; top:130px; } }
+.pigeon3{position: fixed;z-index: 1;right: 110px; top:100px; width: 40px;  animation: pigeon3 2s linear  infinite alternate; -webkit-animation: pigeon3 2s linear  infinite alternate;}
+@keyframes pigeon3 { from {right: 40px; top:90px; }  to {right: 50px; top:110px; } }
+@-webkit-keyframes pigeon3{ from {right: 40px; top:90px; }  to {right: 50px; top:110px;  } }
+.cloudman{position: fixed;  width: 200px; top: 10px; right:-120px;animation: cloudman 3s linear  infinite alternate; -webkit-animation: cloudman 3s linear  infinite alternate;}
+@keyframes cloudman { from {right:-120px;}  to { right:-140px;} }
+@-webkit-keyframes cloudman { from { right:-120px;}  to { right:-140px;} }
+.people_count{ background:url("../images/number_bg.png") no-repeat center center; background-size: cover; color: #fff;font-size: 15px;line-height: 40px; width: 290px; left: 1px; text-align: center; margin: 0 auto; position: relative;}
+.people_count span.number{ font-size: 24px; text-decoration: none;display: block; margin-left: -70px;}
+.people_count span.count_txt{ display: none;}
+.txt_area{ width: 80%; padding: 20px 0 20px; margin: 0 10% }
+.case_logo,.case_logo_2,.case_Q{ width: 100%; display: block;}
+#step_page .cloudman, #step_page2 .cloudman{ display: none;}
+#step_page .pigeon1, #step_page2 .pigeon1{ display: block; z-index: 10; right: 10px; top:20px; width: 60px;  animation: pigeon1 2s linear  infinite alternate; -webkit-animation: pigeon1 2s linear  infinite alternate;}
+@keyframes pigeon1 { from { right: 10px; top:20px; }  to { right: 20px; top:30px; } }
+@-webkit-keyframes pigeon1{ from {right: 10px; top:20px; }  to { right: 20px; top:30px; } }
+#step_page .pigeon2, #step_page2 .pigeon2{z-index: 1;left: 10px; top:10px; width: 35px;  animation: pigeon2 2s linear  infinite alternate; -webkit-animation: pigeon2 2s linear  infinite alternate;}
+@keyframes pigeon2 { from {left: 30px; top:20px;}  to { left: 20px; top:10px;  } }
+@-webkit-keyframes pigeon2{ from {left: 30px; top:20px;}  to { left: 20px; top:10px;  } }
+#step_page .pigeon3, #step_page2 .pigeon3{ width: 50px; z-index: 9; transform:rotateY(180deg);animation: pigeon1_3 2s linear  infinite alternate; -webkit-animation: pigeon1_3 2s linear  infinite alternate;}
+@keyframes pigeon1_3 { from { left: 60px; top:40px; }  to { left: 80px; top:50px; } }
+@-webkit-keyframes pigeon1_3{ from {left: 60px; top:40px; }  to { left: 80px; top:50px; } }
+#step_page .cloudtree, #step_page2 .cloudtree{position: fixed; width: 210px; top: 10px;animation: cloudtree2 2s linear  infinite alternate; -webkit-animation: cloudtree2 2s linear  infinite alternate;}
+@keyframes cloudtree2 { from {  left:  -120px;}  to {  left:  -110px;} }
+@-webkit-keyframes cloudtree2 { from {  left:  -120px;}  to {  left:  -110px;} }
+#step_page .cloudtree2, #step_page2 .cloudtree2{ display: block; position: fixed; width: 190px; top: 120px; right: -130px}
+.slick-slide img{ width: 120px}
+.slick-prev, .slick-next{ width: 40px !important; height: 40px !important;}
+.slick-prev:before, .slick-next:before{ font-size: 30px !important}
+.family_name{width: 120px; margin: 10px auto 20px;}
+.emperor_gift{margin-left: 20px; position: relative; width: 150px; float: left; height: 200px;}
+#step_page .emperor3{ position: relative; display: block; width: 150px;}
+#step_page .chosen_gift,#step_page .cloud3{ display: none;}
+#step_page .chosen_gift2{ position:absolute;display: block;width: 100px; bottom: 50px; left: 10px;animation:gift2 2s linear  infinite alternate; -webkit-animation: gift2 2s linear  infinite alternate;}
+@keyframes gift2 { from {  left:  10px;}  to {  left:  30px;} }
+@-webkit-keyframes gift2 { from {  left: 10px;}  to {  left:  30px;} }
+#step_page2 .tree{ display: none;}
+.man{ margin-right: 20px;position: relative; float: right; margin-top: 56px;}
+@keyframes who { from { font-size:40px;} to { font-size: 32px;} }
+@-webkit-keyframes who { from {font-size:40px;} to { font-size: 32px;} }
+.result{font-size: 15px; margin-bottom: 60px;}
+.btn3_txt {margin: 0 auto 110px; position: relative;}
+.form{ width: 100%}
+.form .case_Q{  width:260px;  display: block;}
+.form ul { float: none; padding-bottom: 20px;}
+.form ul li { float: none; height: 86px; display: block;}
+.form ul li img{ width: 260px; float: none; margin: 0 auto;}
+.form ul li input{ width: 260px; display: block;margin: 0 auto;}
+#step_page2 .btn2{  width: 100%; position: fixed; bottom: 0; margin-bottom: 0}
+.memo{ width: 80%; border-top: 1px solid #c9b791;padding-bottom: 70px;}
+.memo ol{font-size: 14px; margin: 30px 0 90px;}
+.case_logo_2{ width: 80%}
+#step_page2 .emperor2,#step_page2 .cloudman2{ display: none;}
+.end_page .cloud2,.end_page .cloud4{ display: none;}
+.end_info{width: 90%;}
+.end_page .cloud3{ position: fixed; bottom: -50px; top: initial}
+.last_info{ margin-bottom: 40px;}
+}
+
+@media screen and (max-width:374px){
+body{width: 100vw;  overflow-x:hidden; overflow-y: visible  }
+#KV{ background: none}
+#home_page{ height: initial}
+.balloon1,.balloon2{display: none;}
+#home_page .tree{position: fixed; width:100px;   right: -10px; transform:rotateY(180deg);left: initial; top: 110px; z-index: 9; display: block;}
+#home_page .emperor3{ position: relative; width: 38%;  margin-left: 32%;top: 0; z-index: 9; display: block;}
+.main_container{z-index: 10; height: initial; width: 100vw; position: relative; width:100vw; float: none; }
+#home_page .main_container{ top: -40px;}
+#home .content{top: 0;  background: none; width: 100vw;  height: initial; margin-bottom: 80px;}
+.content{top: 0; height: initial; width: 100%; position: relative; z-index: 10}
+.home_txt_area{ width: 100vw}
+.btn1{z-index: 999; display: block; left: 0; width: 100%; position: fixed; bottom: 0}
+.home_txt_mobile{width: 80%; position: relative; margin: 0 auto 100px; display: block;}
+.home_txt{ display: none;}
+.cloudtree{ transform:rotateY(180deg); position: fixed;width: 173px;  left:  -80px; top: 10px; animation: cloudtree 2s linear  infinite alternate; -webkit-animation: cloudtree 2s linear  infinite alternate;}
+@keyframes cloudtree { from {  left:  -70px;}  to {  left:  -90px;} }
+@-webkit-keyframes cloudtree { from {  left:  -70px;}  to {  left:  -90px;} }
+.pigeon1{ display: none; z-index: 1; right: 10px; top:40px;  animation: pigeon1 2s linear  infinite alternate; -webkit-animation: pigeon1 2s linear  infinite alternate;}
+@keyframes pigeon1 { from { right: 10px; top:40px; }  to { right: 20px; top:50px; } }
+@-webkit-keyframes pigeon1{ from {right: 10px; top:40px; }  to { right: 20px; top:50px; } }
+.pigeon2{position: fixed;z-index: 1;left: 10px; top:140px; width: 70px;  animation: pigeon2 2s linear  infinite alternate; -webkit-animation: pigeon2 2s linear  infinite alternate;}
+@keyframes pigeon2 { from {left: 30px; top:140px; }  to { left: 20px; top:130px; } }
+@-webkit-keyframes pigeon2{ from {left: 30px; top:140px; }  to { left: 20px; top:130px; } }
+.pigeon3{position: fixed;z-index: 1;right: 110px; top:100px; width: 40px;  animation: pigeon3 2s linear  infinite alternate; -webkit-animation: pigeon3 2s linear  infinite alternate;}
+@keyframes pigeon3 { from {right: 40px; top:90px; }  to {right: 50px; top:110px; } }
+@-webkit-keyframes pigeon3{ from {right: 40px; top:90px; }  to {right: 50px; top:110px;  } }
+.cloudman{ position: fixed; width: 200px; top: 10px; right:-120px;animation: cloudman 3s linear  infinite alternate; -webkit-animation: cloudman 3s linear  infinite alternate;}
+@keyframes cloudman { from {right:-120px;}  to { right:-140px;} }
+@-webkit-keyframes cloudman { from { right:-120px;}  to { right:-140px;} }
+.people_count{ background:url("../images/number_bg.png") no-repeat center center; background-size: cover; color: #fff;font-size: 15px;line-height: 40px; width: 290px; left: 1px; text-align: center; margin: 0 auto; position: relative;}
+.people_count span.number{ font-size: 24px; text-decoration: none;display: block; margin-left: -70px;}
+.people_count span.count_txt{ display: none;}
+.txt_area{ width: 80%; padding: 20px 0 80px; margin: 0 10% }
+.case_logo,.case_logo_2,.case_Q{ width: 100%; display: block;}
+#step_page .cloudman, #step_page2 .cloudman{ display: none;}
+#step_page .pigeon1, #step_page2 .pigeon1{ display: block; z-index: 10; right: 10px; top:20px; width: 60px;  animation: pigeon1 2s linear  infinite alternate; -webkit-animation: pigeon1 2s linear  infinite alternate;}
+@keyframes pigeon1 { from { right: 10px; top:20px; }  to { right: 20px; top:30px; } }
+@-webkit-keyframes pigeon1{ from {right: 10px; top:20px; }  to { right: 20px; top:30px; } }
+#step_page .pigeon2, #step_page2 .pigeon2{z-index: 1;left: 10px; top:10px; width: 35px;  animation: pigeon2 2s linear  infinite alternate; -webkit-animation: pigeon2 2s linear  infinite alternate;}
+@keyframes pigeon2 { from {left: 30px; top:20px;}  to { left: 20px; top:10px;  } }
+@-webkit-keyframes pigeon2{ from {left: 30px; top:20px;}  to { left: 20px; top:10px;  } }
+#step_page .pigeon3, #step_page2 .pigeon3{ width: 50px; z-index: 9; transform:rotateY(180deg);animation: pigeon1_3 2s linear  infinite alternate; -webkit-animation: pigeon1_3 2s linear  infinite alternate;}
+@keyframes pigeon1_3 { from { left: 60px; top:40px; }  to { left: 80px; top:50px; } }
+@-webkit-keyframes pigeon1_3{ from {left: 60px; top:40px; }  to { left: 80px; top:50px; } }
+#step_page .cloudtree, #step_page2 .cloudtree{position: fixed; width: 210px; top: 10px;animation: cloudtree2 2s linear  infinite alternate; -webkit-animation: cloudtree2 2s linear  infinite alternate;}
+@keyframes cloudtree2 { from {  left:  -120px;}  to {  left:  -110px;} }
+@-webkit-keyframes cloudtree2 { from {  left:  -120px;}  to {  left:  -110px;} }
+#step_page .cloudtree2, #step_page2 .cloudtree2{ display: block; position: fixed; width: 190px; top: 120px; right: -130px}
+.slick-slide img{ width: 120px}
+.slick-prev, .slick-next{ width: 40px !important; height: 40px !important;}
+.slick-prev:before, .slick-next:before{ font-size: 30px !important}
+.family_name{width: 120px; margin: 10px auto 20px;}
+.emperor_gift{ position: relative; width: 150px; float: left; height: 200px;}
+#step_page .emperor3{ position: relative; display: block; width: 150px;}
+#step_page .chosen_gift,#step_page .cloud3{ display: none;}
+#step_page .chosen_gift2{ position:absolute;display: block;width: 100px; bottom: 50px; left: 10px;animation:gift2 2s linear  infinite alternate; -webkit-animation: gift2 2s linear  infinite alternate;}
+@keyframes gift2 { from {  left:  10px;}  to {  left:  30px;} }
+@-webkit-keyframes gift2 { from {  left: 10px;}  to {  left:  30px;} }
+#step_page2 .tree{ display: none;}
+.man{ position: relative; float: right; margin-top: 56px;}
+@keyframes who { from { font-size:40px;} to { font-size: 32px;} }
+@-webkit-keyframes who { from {font-size:40px;} to { font-size:32px;} }
+.result{font-size: 13px; margin-bottom: 50px;}
+.form{ width: 100%}
+.form .case_Q{  width:260px;  display: block;}
+.form ul { float: none; padding-bottom: 20px;}
+.form ul li { float: none; height: 86px; display: block;}
+.form ul li img{ width: 260px; float: none; margin: 0 auto;}
+.form ul li input{ width: 260px; display: block;margin: 0 auto;}
+#step_page2 .btn2{ width: 100%; position: fixed; bottom: 0; margin-bottom: 0}
+.memo{ width: 80%; border-top: 1px solid #c9b791;padding-bottom: 30px;}
+.memo ol{font-size: 14px; margin: 30px 0 90px;}
+.case_logo_2{ width: 80%}
+#step_page2 .emperor2,#step_page2 .cloudman2{ display: none;}
+.end_page .cloud2,.end_page .cloud4{ display: none;}
+.end_info{width: 90%;}
+.end_page .cloud3{ position: fixed; bottom: -50px; top: initial}
+.last_info{ margin-bottom: 40px;}
+}
+
+
