@@ -5,7 +5,7 @@
   "author": "diamond <diamond.cc@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --host 192.168.0.18",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
@@ -13,6 +13,7 @@
     "axios": "^0.15.3",
     "jquery": "~1.11.0",
     "slick-carousel": "^1.6.0",
+    "vee-validate": "^2.0.0-beta.17",
     "vue": "^2.2.1"
   },
   "devDependencies": {

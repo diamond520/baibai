@@ -27,7 +27,7 @@
             <div><img src="./assets/images/gift_05.png" alt=""></div>
             <div><img src="./assets/images/gift_06.png" alt=""></div>
           </slick>
-          <a class="btn1" @click="next"><img src="./assets/images/btn2.gif" alt=""></a>
+          <a class="btn1" @click="nextStep"><img src="./assets/images/btn2.gif" alt=""></a>
         </div>
       </div>
     </div>
@@ -37,6 +37,8 @@
 <script>
 import atui from  'atui';
 import Slick from 'vue-slick';
+// import $ from 'jquery';
+import test from './test.js';
 
 export default {
   name: 'step-1',
@@ -46,8 +48,14 @@ export default {
       errorMsg: '',
       status: false,
       slickOptions: {
-        slidesToShow: 3,
-        // Any other options that can be got from plugin documentation
+        slidesToShow: 1,
+        initialSlide: 0
+      },
+      currentSlide: 0,
+      oblation: ['flower','eaten','wine','fruit','bao','incense'],
+      result: {
+        oblation: "",
+        familyName: ""
       }
     }
   },
@@ -63,13 +71,34 @@ export default {
         return true;
       }
     },
+    nextStep: function () {
+      var self = this;
+      if(!self.status) 
+        return;
+      this.currentSlide = this.$refs.slick.$el.slick.currentSlide;
+      self.$parent.result = {
+        oblation : self.oblation[this.currentSlide],
+        familyName: self.familyName
+      }
+      self.$parent.step += 1;
+      return;
+    },
     next() {
-      this.$refs.slick.next();
+      var self = this;
+      self.$refs.slick.next();
     },
-
     prev() {
-      this.$refs.slick.prev();
+      var self = this;
+      self.$refs.slick.prev();
     },
+    pickRandomProperty: function (obj) {
+        var result;
+        var count = 0;
+        for (var prop in obj)
+            if (Math.random() < 1/++count)
+               result = prop;
+        return result;
+    }
   },
   watch: {
     familyName: function () {
@@ -102,5 +131,8 @@ p.errorMsg {
 .slick-next:before, .slick-prev:before{
   opacity: .75;
   color: #C79A16;
+}
+.slick-slide img {
+  margin: 0 auto;
 }
 </style>
