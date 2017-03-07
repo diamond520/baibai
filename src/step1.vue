@@ -64,7 +64,11 @@ export default {
       console.log('test');
     },
     isChinese ( str ) {
+      var self = this
       var regx = /[^\u4e00-\u9fa5]/;
+      if(!str){ 
+        return false;
+      }
       if(regx.test(str)) {
         return false;
       } else {
@@ -73,8 +77,10 @@ export default {
     },
     nextStep: function () {
       var self = this;
-      if(!self.status) 
+      if(!self.status){ 
+        console.warn('family name invalid.');
         return;
+      }
       this.currentSlide = this.$refs.slick.$el.slick.currentSlide;
       self.$parent.result = {
         oblation : self.oblation[this.currentSlide],
@@ -95,15 +101,15 @@ export default {
         var result;
         var count = 0;
         for (var prop in obj)
-            if (Math.random() < 1/++count)
-               result = prop;
+          if (Math.random() < 1/++count)
+            result = prop;
         return result;
     }
   },
   watch: {
-    familyName: function () {
+    familyName: function (familyName) {
       var self = this;
-      if(self.isChinese(self.familyName)) {
+      if(self.isChinese(familyName)) {
         self.status = true;
         self.errorMsg = '';
       } else {
@@ -134,5 +140,16 @@ p.errorMsg {
 }
 .slick-slide img {
   margin: 0 auto;
+}
+.form li {
+  text-align: center;
+  span {
+    color: #ff3333;
+  }
+}
+.input.is-danger, .textarea.is-danger {
+  border-color: #ff3860;
+  border: 1px solid #ff3860;
+  border-radius: 3px;
 }
 </style>

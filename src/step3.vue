@@ -99,27 +99,20 @@ export default {
       self.$validator.validateAll()
       .then(result => {
         if (!result) {
-          return;
+          throw 'filed required.'
         }
         var params = {
           name: self.name,
           tel: self.name,
           email: self.email
         };
-        // var params = new URLSearchParams();
-        // params.append('name', self.name);
-        // params.append('tel', self.tel);
-        // params.append('email', self.email);
         return axios.post(config.rootApi+'lottery', params);
       })
       .then(function (response) {
         self.$parent.step += 1;
-        // self.options = response.data.data;
-        // console.log(response);
       })
       .catch(function (error) {
-        // alert(error);
-        console.warn(response);
+        console.warn(error);
       });
     },
     pickRandomProperty: function (obj) {
